@@ -2,6 +2,10 @@
 
 > 温泉サイト「むかゆう」をnuxtで構築
 
+http://mukayu.com/
+
+gitはGUIを使わずVSCodeを使いコマンドラインで管理。
+
 ## Build Setup
 
 ``` bash
