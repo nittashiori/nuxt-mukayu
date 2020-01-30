@@ -1,39 +1,49 @@
 <template>
   <div class="container">
     <div>
-      <logo />
-      <h1 class="title">
-        mukayu
-      </h1>
-      <h2 class="subtitle">
-        温泉サイト「むかゆう」をnuxtで構築
-      </h2>
-      <div class="links">
-        <a
-          href="https://nuxtjs.org/"
-          target="_blank"
-          class="button--green"
-        >
-          Documentation
-        </a>
-        <a
-          href="https://github.com/nuxt/nuxt.js"
-          target="_blank"
-          class="button--grey"
-        >
-          GitHub
-        </a>
+      <Header />
+      <div class="content">
+        <div class="kv">
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/NZ84oLS6_Uw"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </div>
+        <div class="cards">
+          <Card
+            v-for="list in lists"
+            :arg="list"
+            :key="list.title"
+          />
+        </div>
+        <!-- .cards -->
       </div>
+      <!-- content -->
+
+      <Footer />
     </div>
   </div>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import Header from '~/components/Header.vue'
+import Footer from '~/components/Footer.vue'
+import Card from '~/components/Card.vue'
+import Data from '~/store/data.json'
 
 export default {
   components: {
-    Logo
+    Header,
+    Footer,
+    Card
+  },
+  asyncData (context) {
+    return {
+      lists: Data.lists
+    }
   }
 }
 </script>
