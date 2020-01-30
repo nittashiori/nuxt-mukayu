@@ -1,0 +1,46 @@
+{
+  "lists": [
+    {
+      "id": "01",
+      "image": "http://mukayu.com/wordpress/wp-content/uploads/2015/06/J1-0-btn01.jpg",
+      "title": "お知らせ",
+      "link": "/"
+    },
+    {
+      "id": "02",
+      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J9-0-btn01.jpg",
+      "title": "予約",
+      "link": "/"
+    },
+    {
+      "id": "03",
+      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J7-0-btn01.jpg",
+      "title": "施設",
+      "link": "/"
+    },
+    {
+      "id": "04",
+      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J5-0-btn01.jpg",
+      "title": "客室",
+      "link": "/"
+    },
+    {
+      "id": "05",
+      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-0-btn01.jpg",
+      "title": "料理",
+      "link": "/"
+    },
+    {
+      "id": "06",
+      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J4-3-btn01.jpg",
+      "title": "スパ円庭施術院",
+      "link": "/"
+    },
+    {
+      "id": "06",
+      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J2-0-btn01.jpg",
+      "title": "コンセプト",
+      "link": "/concept"
+    }
+  ]
+}
