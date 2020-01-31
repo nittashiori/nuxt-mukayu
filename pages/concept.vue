@@ -1,59 +1,27 @@
 <template>
-  <div class="container">
-    <div>
-      <logo />
-      <h1 class="title">
-        コンセプトページです
-      </h1>
-      <nuxt-link
-        to="/"
-        class="button--grey"
-      >
-        トップへ戻る
-      </nuxt-link>
+  <section class="container">
+    <PageTitle>
+      コンセプト
+    </PageTitle>
+    <div class="content">
+      <div class="concept-block">
+        <img class="image-visual" src="~/static/images/J2-01.jpg">
+        <img class="image-text" src="~/static/images/J2-02_n.png">
+      </div>
     </div>
-  </div>
+    <div class="concept-block">
+      <img class="image-visual" src="~/static/images/J2-03.jpg">
+      <img class="image-text" src="~/static/images/J2-04.png">
+    </div>
+  </section>
 </template>
 
 <script>
-import Logo from '~/components/Logo.vue'
+import PageTitle from '~/components/PageTitle'
 
 export default {
   components: {
-    Logo
+    PageTitle
   }
 }
 </script>
-
-<style>
-.container {
-  margin: 0 auto;
-  min-height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  text-align: center;
-}
-
-.title {
-  font-family: 'Quicksand', 'Source Sans Pro', -apple-system, BlinkMacSystemFont,
-    'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
-  display: block;
-  font-weight: 300;
-  font-size: 100px;
-  color: #35495e;
-  letter-spacing: 1px;
-}
-
-.subtitle {
-  font-weight: 300;
-  font-size: 42px;
-  color: #526488;
-  word-spacing: 5px;
-  padding-bottom: 15px;
-}
-
-.links {
-  padding-top: 15px;
-}
-</style>

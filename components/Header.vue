@@ -27,7 +27,7 @@
         </li>
         <li class="nav-menu__list">
           <nuxt-link
-            to="/concept"
+            to="/gallery"
             class="nav-menu__item"
           >
             ピクチャームービー
@@ -35,7 +35,7 @@
         </li>
         <li class="nav-menu__list">
           <nuxt-link
-            to="/concept"
+            to="/reservation"
             class="nav-menu__item"
           >
             ご予約
@@ -43,7 +43,7 @@
         </li>
         <li class="nav-menu__list">
           <nuxt-link
-            to="/concept"
+            to="/access"
             class="nav-menu__item"
           >
             交通
@@ -51,7 +51,7 @@
         </li>
         <li class="nav-menu__list">
           <nuxt-link
-            to="/concept"
+            to="/ca_news"
             class="nav-menu__item"
           >
             お知らせ
