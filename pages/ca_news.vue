@@ -11,10 +11,10 @@
           </h3>
           <time class="time">2019年 2月 24日</time>
           <figure class="article-__image">
-            <img src="~/static/images/ca_news/DSC_0044.jpg">
+            <img src="images/ca_news/DSC_0044.jpg">
           </figure>
           <figure class="article-__image">
-            <img src="~/static/images/ca_news/2018-05-13-12.57.01.jpg">
+            <img src="images/ca_news/2018-05-13-12.57.01.jpg">
           </figure>
           <p class="article__text">
             方林円庭の会 「ありがたし花」2019<br>
@@ -30,10 +30,10 @@
           </h3>
           <time class="time">2019年 2月 24日</time>
           <figure class="article-__image">
-            <img src="~/static/images/ca_news/DSC_0044.jpg">
+            <img src="images/ca_news/DSC_0044.jpg">
           </figure>
           <figure class="article-__image">
-            <img src="~/static/images/ca_news/2018-05-13-12.57.01.jpg">
+            <img src="images/ca_news/2018-05-13-12.57.01.jpg">
           </figure>
           <p class="article__text">
             方林円庭の会 「ありがたし花」2019<br>

@@ -12,7 +12,7 @@
     </nav>
     <div class="content">
       <div class="page-kv">
-        <img src="~/static/images/food/J6-0-01d.jpg">
+        <img src="images/food/J6-0-01d.jpg">
       </div>
     </div>
     <div class="cards">

@@ -12,7 +12,7 @@
     </nav>
     <div class="content">
       <div class="page-kv">
-        <img src="~/static/images/spa/J4-3-01.jpg">
+        <img src="images/spa/J4-3-01.jpg">
       </div>
       <p class="text">
         円庭施術院では外来のお客様の施術もお受け致します。トリートメントは予約制となっております。<br>
@@ -45,13 +45,13 @@
           </p>
           <ul class="image-list">
             <li class="image-list__item">
-              <img src="~/static/images/spa/J4-3-02.jpg">
+              <img src="images/spa/J4-3-02.jpg">
             </li>
             <li class="image-list__item">
-              <img src="~/static/images/spa/J4-3-03.jpg">
+              <img src="images/spa/J4-3-03.jpg">
             </li>
             <li class="image-list__item">
-              <img src="~/static/images/spa/J4-3-04.jpg">
+              <img src="images/spa/J4-3-04.jpg">
             </li>
           </ul>
         </section>

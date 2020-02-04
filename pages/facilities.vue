@@ -12,7 +12,7 @@
     </nav>
     <div class="content">
       <div class="page-kv">
-        <img src="~/static/images/facilities/J7-0-01.jpg">
+        <img src="images/facilities/J7-0-01.jpg">
       </div>
       <p class="text">
         ・Wi-Fi が全館でご利用いただけます。

@@ -12,7 +12,7 @@
     </nav>
     <div class="content">
       <div class="page-kv">
-        <img src="~/static/images/guestroom/J5-0-01.jpg">
+        <img src="images/guestroom/J5-0-01.jpg">
       </div>
       <p class="text">
         ◎べにや無何有は、和室8室、洋室2室、和洋室6室、特別室2室の計16室がございます。<br>
