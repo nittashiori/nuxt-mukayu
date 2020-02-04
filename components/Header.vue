@@ -7,7 +7,7 @@
         <logo />
       </nuxt-link>
     </h1>
-    <nav class="header__nav">
+    <nav class="header-nav">
       <ul class="nav-menu">
         <li class="nav-menu__list">
           <nuxt-link
@@ -71,3 +71,13 @@ export default {
   }
 }
 </script>
+
+<style lang="scss">
+.header {
+  display: flex;
+  background: #ddd;
+}
+.nav-menu {
+  display: flex;
+}
+</style>

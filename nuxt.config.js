@@ -13,6 +13,22 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    __dangerouslyDisableSanitizers: ['script'],
+    script: [
+      {
+        innerHTML: `
+        (function(d) {
+          var config = {
+            kitId: 'uao2mcm',
+            scriptTimeout: 3000,
+            async: true
+          },
+          h=d.documentElement,t=setTimeout(function(){h.className=h.className.replace(/\bwf-loading\b/g,"")+" wf-inactive";},config.scriptTimeout),tk=d.createElement("script"),f=false,s=d.getElementsByTagName("script")[0],a;h.className+=" wf-loading";tk.src='https://use.typekit.net/'+config.kitId+'.js';tk.async=true;tk.onload=tk.onreadystatechange=function(){a=this.readyState;if(f||a&&a!="complete"&&a!="loaded")return;f=true;clearTimeout(t);try{Typekit.load(config)}catch(e){}};s.parentNode.insertBefore(tk,s)
+        })(document);
+        `,
+        type: 'text/javascript'
+      }
     ]
   },
   /*
@@ -23,6 +39,7 @@ export default {
   ** Global CSS
   */
   css: [
+    'ress'// Node.js モジュールをロードする
   ],
   /*
   ** Plugins to load before mounting the App
@@ -40,7 +57,14 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
+    '@nuxtjs/style-resources'
   ],
+  styleResources: {
+    scss: [
+      '~/assets/scss/variables.scss',
+      '~/assets/scss/mixin.scss'
+    ]
+  },
   /*
   ** Build configuration
   */

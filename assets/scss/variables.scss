@@ -1,0 +1,49 @@
+// Breakpoints
+// ----------------------------------------
+
+$breakpoints: (
+  'sm': 375px,
+  'md': 768px,
+  'lg': 1024px,
+  'xl': 1200px
+) !default;
+
+// Color
+// ----------------------------------------
+
+$body-color: #f7f7f5;
+$txt-color: #000000;
+$white-color: #ffffff;
+$black-color: #000000;
+$border-color: #707070;
+$disabled-color: #afafaf;
+
+// Font
+// ----------------------------------------
+@mixin font-ja {
+  font-family: a-otf-ryumin-pr6n, serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+
+// Font-size
+// ----------------------------------------
+
+$fts-reset: 62.5%;
+$fts-x-heading: 3.4rem;
+$fts-heading: 3.0rem;
+$fts-xxx-large: 2.4rem;
+$fts-xx-large: 2.2rem;
+$fts-x-large: 2.0rem;
+$fts-large: 1.8rem;
+$fts-medium: 1.6rem;
+$fts-regular: 1.4rem;
+$fts-small: 1.2rem;
+$fts-x-small: 1.0rem;
+
+// Easing
+// ----------------------------------------
+
+$easeInOutCubic: cubic-bezier(0.645, 0.045, 0.355, 1);
+$ease: ease;
