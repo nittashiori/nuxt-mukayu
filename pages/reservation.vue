@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <PageTitle>
-      ご予約
+      {{ meta.title }}
     </PageTitle>
     <div class="movie">
       <iframe
@@ -169,10 +169,23 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
     PageTitle
+  },
+  mixins: [Meta],
+  data () {
+    return {
+      meta: {
+        title: 'ご予約',
+        description: 'ご予約のディスクリプション。加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。',
+        type: 'article',
+        url: 'https://mukayu.com/reservation',
+        image: 'https://mukayu.com/img/ogp/reservation.jpg'
+      }
+    }
   }
 }
 </script>

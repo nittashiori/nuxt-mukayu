@@ -2,43 +2,43 @@
   "lists": [
     {
       "id": "01",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2015/06/J1-0-btn01.jpg",
+      "image": "images/J1-0-btn01.jpg",
       "title": "お知らせ",
       "link": "/ca_news"
     },
     {
       "id": "02",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J9-0-btn01.jpg",
+      "image": "images/J9-0-btn01.jpg",
       "title": "予約",
       "link": "/reservation"
     },
     {
       "id": "03",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J7-0-btn01.jpg",
+      "image": "images//J7-0-btn01.jpg",
       "title": "施設",
       "link": "/facilities"
     },
     {
       "id": "04",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J5-0-btn01.jpg",
+      "image": "images/J5-0-btn01.jpg",
       "title": "客室",
       "link": "/guestroom"
     },
     {
       "id": "05",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-0-btn01.jpg",
+      "image": "images/J6-0-btn01.jpg",
       "title": "料理",
       "link": "/food"
     },
     {
       "id": "06",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J4-3-btn01.jpg",
+      "image": "images/J4-3-btn01.jpg",
       "title": "スパ円庭施術院",
       "link": "/spa"
     },
     {
       "id": "07",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J2-0-btn01.jpg",
+      "image": "images/J2-0-btn01.jpg",
       "title": "コンセプト",
       "link": "/concept"
     }
@@ -46,31 +46,31 @@
   "facilities": [
     {
       "id": "01",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J7-3-btn01.jpg",
+      "image": "images/J7-3-btn01.jpg",
       "title": "エントランスロビー",
       "link": "/"
     },
     {
       "id": "02",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J7-1-btn01.jpg",
+      "image": "images/J7-1-btn01.jpg",
       "title": "大浴場「こもれびの湯」",
       "link": "/"
     },
     {
       "id": "03",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J7-2-btn01.jpg",
+      "image": "images/J7-2-btn01.jpg",
       "title": "図書室",
       "link": "/"
     },
     {
       "id": "04",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J7-5-btn01.jpg",
+      "image": "images/J7-5-btn01.jpg",
       "title": "茶室永楽庵",
       "link": "/"
     },
     {
       "id": "05",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J7-6-1-btn01.jpg",
+      "image": "images/J7-6-1-btn01.jpg",
       "title": "ショップ",
       "link": "/"
     }
@@ -78,31 +78,31 @@
   "guestrooms": [
     {
       "id": "01",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J5-1-btn01.jpg",
+      "image": "images/J5-1-btn01.jpg",
       "title": "和室",
       "link": "/"
     },
     {
       "id": "02",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J5-2-btn01.jpg",
+      "image": "images/J5-2-btn01.jpg",
       "title": "洋室",
       "link": "/"
     },
     {
       "id": "03",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J5-3-btn01.jpg",
+      "image": "images/J5-3-btn01.jpg",
       "title": "和洋室",
       "link": "/"
     },
     {
       "id": "04",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J5-4-btn01.jpg",
+      "image": "images/J5-4-btn01.jpg",
       "title": "特別室 若紫",
       "link": "/"
     },
     {
       "id": "05",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2018/04/J5-5-btn01.jpg",
+      "image": "images/J5-5-btn01.jpg",
       "title": "特別室 白緑",
       "link": "/"
     }
@@ -110,43 +110,43 @@
   "foods": [
     {
       "id": "01",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-3-1-btn01.jpg",
+      "image": "images/J6-3-1-btn01.jpg",
       "title": "春",
       "link": "/"
     },
     {
       "id": "02",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-3-2-btn01.jpg",
+      "image": "images/J6-3-2-btn01.jpg",
       "title": "夏",
       "link": "/"
     },
     {
       "id": "03",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-3-3-btn01.jpg",
+      "image": "images/J6-3-3-btn01.jpg",
       "title": "秋",
       "link": "/"
     },
     {
       "id": "04",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-3-4-btn01.jpg",
+      "image": "images/J6-3-4-btn01.jpg",
       "title": "冬",
       "link": "/"
     },
     {
       "id": "05",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-3-5-btn01.jpg",
+      "image": "images/J6-3-5-btn01.jpg",
       "title": "ライトディナー・寿司ディナー",
       "link": "/"
     },
     {
       "id": "06",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-6-btn01.jpg",
+      "image": "images/J6-6-btn01.jpg",
       "title": "朝食",
       "link": "/"
     },
     {
       "id": "07",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J6-8-btn01.jpg",
+      "image": "images/J6-8-btn01.jpg",
       "title": "飲み物",
       "link": "/"
     }
@@ -154,19 +154,19 @@
   "spas": [
     {
       "id": "01",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J4-3-btn02.jpg",
+      "image": "images/J4-3-btn02.jpg",
       "title": "メニュー一覧",
       "link": "/"
     },
     {
       "id": "02",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J4-5-btn01.jpg",
+      "image": "images/J4-5-btn01.jpg",
       "title": "メニュー一覧（PDF）",
       "link": "/"
     },
     {
       "id": "03",
-      "image": "http://mukayu.com/wordpress/wp-content/uploads/2012/05/J4-6-btn01.jpg",
+      "image": "images/J4-6-btn01.jpg",
       "title": "円庭施術院 ご予約について",
       "link": "/"
     }

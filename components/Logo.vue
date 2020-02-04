@@ -1,7 +1,7 @@
 <template>
   <img
     class="logo"
-    src="~/static/images/logo.gif"
+    src="images/logo-head.png"
     alt="無何有ロゴ"
   >
 </template>
