@@ -5,11 +5,21 @@ export default {
   ** Headers of the page
   */
   head: {
+    htmlAttrs: {
+      prefix: 'og: http://ogp.me/ns#'
+    },
+    titleTemplate: '%s - mukayu',
     title: process.env.npm_package_name || '',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: '加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。' },
+      { hid: 'og:site_name', property: 'og:site_name', content: 'mukayu' },
+      { hid: 'og:type', property: 'og:type', content: 'website' },
+      { hid: 'og:url', property: 'og:url', content: 'https://example.com' },
+      { hid: 'og:title', property: 'og:title', content: 'mukayu' },
+      { hid: 'og:description', property: 'og:description', content: '加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。' },
+      { hid: 'og:image', property: 'og:image', content: 'https://example.com/img/ogp/common.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }

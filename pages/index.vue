@@ -33,6 +33,12 @@ export default {
   components: {
     Card
   },
+  head () {
+    return {
+      titleTemplate: null,
+      title: 'mukayu'
+    }
+  },
   asyncData (context) {
     return {
       lists: Data.lists

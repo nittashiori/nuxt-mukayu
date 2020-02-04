@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <PageTitle>
-      スパ円庭施術院
+      {{ meta.title }}
     </PageTitle>
     <nav class="page-nav">
       <PageNavItem
@@ -237,12 +237,25 @@ import PageTitle from '~/components/PageTitle.vue'
 import PageNavItem from '~/components/PageNavItem.vue'
 import Card from '~/components/Card.vue'
 import Data from '~/store/data.json'
+import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
     PageTitle,
     PageNavItem,
     Card
+  },
+  mixins: [Meta],
+  data () {
+    return {
+      meta: {
+        title: 'スパ 円庭施術院',
+        description: 'スパ 円庭施術院のディスクリプション。加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。',
+        type: 'article',
+        url: 'https://mukayu.com/reservation',
+        image: 'https://mukayu.com/img/ogp/reservation.jpg'
+      }
+    }
   },
   asyncData (context) {
     return {

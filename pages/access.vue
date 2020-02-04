@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <PageTitle>
-      交通
+      {{ meta.title }}
     </PageTitle>
     <div class="grid">
       <Transportation>
@@ -87,11 +87,24 @@
 <script>
 import PageTitle from '~/components/PageTitle.vue'
 import Transportation from '~/components/Transportation.vue'
+import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
     PageTitle,
     Transportation
+  },
+  mixins: [Meta],
+  data () {
+    return {
+      meta: {
+        title: '交通',
+        description: '交通のディスクリプション。加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。',
+        type: 'article',
+        url: 'https://mukayu.com/access',
+        image: 'https://mukayu.com/img/ogp/access.jpg'
+      }
+    }
   }
 }
 </script>

@@ -1,7 +1,7 @@
 <template>
   <section class="container">
     <PageTitle>
-      お知らせ
+      {{ meta.title }}
     </PageTitle>
     <div class="wrap">
       <div class="content">
@@ -99,10 +99,23 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
     PageTitle
+  },
+  mixins: [Meta],
+  data () {
+    return {
+      meta: {
+        title: 'お知らせ',
+        description: 'お知らせのディスクリプション。加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。',
+        type: 'article',
+        url: 'https://mukayu.com/ca_news',
+        image: 'https://mukayu.com/img/ogp/ca_news.jpg'
+      }
+    }
   }
 }
 </script>
