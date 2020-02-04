@@ -1,0 +1,46 @@
+/*
+* メディアクエリでスタイルを定義するためのmixin
+* @param $breakpoint variablesのbreakpointsで定義した閾値
+* @param $minmax 閾値以上か以下どちらでスタイルを適用するかを判断するための値 (min / max)
+*/
+@mixin media($breakpoint: md, $minmax: min) {
+  @if $minmax == min {
+    @media screen and (min-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  } @else if $minmax == max {
+    @media screen and (max-width: #{map-get($breakpoints, $breakpoint)}) {
+      @content;
+    }
+  }
+}
+
+// Center
+@mixin centering($direction) {
+  position: absolute;
+
+  @if $direction == h {
+    // 横センタリング
+    left: 50%;
+    transform: translateX(-50%);
+  } @else if $direction == v {
+    // 縦センタリング
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  } @else  {
+    // 縦横センタリング
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+}
+
+// Colume
+// flexboxに対する設定
+@mixin flex($wrap, $justify-content, $align-items) {
+  display: flex;
+  flex-wrap: $wrap;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}
