@@ -7,7 +7,7 @@
       <PageNavItem
         v-for="food in foods"
         :arg="food"
-        :key="food.title"
+        :key="food.id"
       />
     </nav>
     <div class="content">
@@ -19,7 +19,7 @@
       <Card
         v-for="food in foods"
         :arg="food"
-        :key="food.title"
+        :key="food.id"
       />
     </div>
   </section>

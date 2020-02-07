@@ -11,17 +11,19 @@ $breakpoints: (
 // Color
 // ----------------------------------------
 
-$body-color: #f7f7f5;
-$txt-color: #000000;
+$body-color: #ffffff;
+$text-color: #2b2b2b;
 $white-color: #ffffff;
+$gray-color: #999999;
 $black-color: #000000;
-$border-color: #707070;
+$border-color: #cccccc;
 $disabled-color: #afafaf;
 
 // Font
 // ----------------------------------------
 @mixin font-ja {
-  font-family: a-otf-ryumin-pr6n, serif;
+  // font-family: a-otf-ryumin-pr6n, serif;
+  font-family: "Istok Web", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
 }
@@ -31,7 +33,7 @@ $disabled-color: #afafaf;
 // ----------------------------------------
 
 $fts-reset: 62.5%;
-$fts-x-heading: 3.4rem;
+$fts-x-heading: 4rem;
 $fts-heading: 3.0rem;
 $fts-xxx-large: 2.4rem;
 $fts-xx-large: 2.2rem;

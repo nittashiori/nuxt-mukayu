@@ -22,7 +22,8 @@ export default {
       { hid: 'og:image', property: 'og:image', content: 'https://example.com/img/ogp/common.jpg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Istok+Web&display=swap' }
     ],
     __dangerouslyDisableSanitizers: ['script'],
     script: [
@@ -67,12 +68,24 @@ export default {
   ** Nuxt.js modules
   */
   modules: [
-    '@nuxtjs/style-resources'
+    '@nuxtjs/style-resources',
+    'nuxt-fontawesome'
   ],
   styleResources: {
     scss: [
       '~/assets/scss/variables.scss',
       '~/assets/scss/mixin.scss'
+    ]
+  },
+  /*
+  ** FontAwesome
+  */
+  fontawesome: {
+    imports: [
+      {
+        set: '@fortawesome/free-solid-svg-icons',
+        icons: ['fas']
+      }
     ]
   },
   /*

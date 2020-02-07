@@ -1,11 +1,10 @@
 <template>
-  <div class="page-innder-nav__item">
-    <a
-      :href="arg.link"
-    >
-      {{ arg.title }}
-    </a>
-  </div>
+  <a
+    :href="arg.link"
+    class="page-innder-nav__item"
+  >
+    {{ arg.title }}
+  </a>
 </template>
 
 <script>
@@ -18,3 +17,18 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .page-innder-nav__item {
+    display: block;
+    margin: 0 20px 0 0;
+
+    @include media(md, max) {
+      margin: 0 20px 10px 0;
+    }
+
+    &:hover {
+      opacity: 0.7;
+    }
+  }
+</style>
