@@ -5,57 +5,9 @@
     </PageTitle>
     <div class="grid">
       <div class="content main">
-        <div class="article">
-          <section class="article__header">
-            <h3 class="article__title">
-              <a href="/">方林円庭の会 ありがたし花2019</a>
-            </h3>
-            <time class="article__time">2019年 2月 24日</time>
-            <div class="article__button">
-              <font-awesome-icon icon="angle-down" />
-            </div>
-          </section>
-          <div class="article__content">
-            <div class="article__image">
-              <img src="images/ca_news/DSC_0044.jpg">
-            </div>
-            <div class="article__image">
-              <img src="images/ca_news/2018-05-13-12.57.01.jpg">
-            </div>
-            <p class="article__text">
-              方林円庭の会 「ありがたし花」2019<br>
-              日時・場所<br>
-              2019年5月12日 日曜日<br>
-              草木に仕える花士（はなのふ）として、大自然や神仏に花を献ずる活動をしている花士・珠寳（しゅほう）氏とともに自然の中で草木花と親しむ豊かな時間を楽しみます。<br>
-            </p>
-          </div>
-        </div>
-
-        <div class="article">
-          <section class="article__header">
-            <h3 class="article__title">
-              <a href="/">方林円庭の会 ありがたし花2019</a>
-            </h3>
-            <time class="article__time">2019年 2月 24日</time>
-            <div class="article__button">
-              <font-awesome-icon icon="angle-down" />
-            </div>
-          </section>
-          <div class="article__content">
-            <div class="article__image">
-              <img src="images/ca_news/DSC_0044.jpg">
-            </div>
-            <div class="article__image">
-              <img src="images/ca_news/2018-05-13-12.57.01.jpg">
-            </div>
-            <p class="article__text">
-              方林円庭の会 「ありがたし花」2019<br>
-              日時・場所<br>
-              2019年5月12日 日曜日<br>
-              草木に仕える花士（はなのふ）として、大自然や神仏に花を献ずる活動をしている花士・珠寳（しゅほう）氏とともに自然の中で草木花と親しむ豊かな時間を楽しみます。<br>
-            </p>
-          </div>
-        </div>
+        <ArticleNews />
+        <ArticleNews />
+        <ArticleNews />
       </div>
       <nav class="sub-nav">
         <section class="sub-nav-block">
@@ -113,11 +65,13 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import ArticleNews from '~/components/ArticleNews.vue'
 import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
-    PageTitle
+    PageTitle,
+    ArticleNews
   },
   mixins: [Meta],
   data () {
@@ -140,76 +94,6 @@ export default {
 
     @include media(md, max) {
       width: 100%;
-    }
-  }
-
-  .article {
-    padding: 0 0 40px;
-
-    @include media(md, max) {
-      padding: 0 0 25px;
-    }
-
-    &:not(:first-child) {
-      padding: 40px 0;
-      border-top: 1px solid $black-color;
-
-      @include media(md, max) {
-        padding: 25px 0;
-      }
-    }
-
-    &__header {
-      position: relative;
-    }
-
-    &__title {
-      font-size: $fts-xx-large;
-
-      @include media(md, max) {
-        width: calc(100% - 50px);
-        font-size: $fts-x-large;
-      }
-    }
-
-    &__button {
-      display: none;
-
-      @include media(md, max) {
-        @include flex(wrap, center, center);
-        width: 40px;
-        height: 40px;
-        background: $gray-color;
-        position: absolute;
-        top: 0;
-        right: 0;
-      }
-
-      svg {
-        color: $white-color;
-        font-size: $fts-x-large;
-      }
-    }
-
-    &__time {
-      margin: 5px 0 0;
-      font-family: 'PT Serif Caption', Georgia, Times, "Times New Roman", serif;
-
-      @include media(md, max) {
-        width: calc(100% - 50px);
-      }
-    }
-
-    &__content {
-      margin: 20px 0 0;
-    }
-
-    &__image {
-      margin: 10px 0;
-    }
-
-    &__text {
-      margin: 20px 0;
     }
   }
 

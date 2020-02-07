@@ -1,13 +1,13 @@
 <template>
-  <nav class="header-nav-sp">
-    <div class="menu-btn">
-      <button class="menu-btn__trigger">
+  <nav :class="{ 'is-open': isOpen }" class="global-nav-sp">
+    <div @click="menuToggle()" class="menu-btn">
+      <div class="menu-btn__trigger">
         <span class="line line-first" />
         <span class="line line-second" />
         <span class="line line-thrid" />
-      </button>
+      </div>
     </div>
-    <ul class="nav-menu">
+    <ul @click="menuToggle()" class="nav-menu">
       <li class="nav-menu__list">
         <nuxt-link
           to="/"
@@ -21,7 +21,7 @@
           to="/concept"
           class="nav-menu__item"
         >
-          宿のご案内
+          コンセプト
         </nuxt-link>
       </li>
       <li class="nav-menu__list">
@@ -60,8 +60,23 @@
   </nav>
 </template>
 
+<script>
+export default {
+  data () {
+    return {
+      isOpen: false
+    }
+  },
+  methods: {
+    menuToggle () {
+      this.isOpen = !this.isOpen
+    }
+  }
+}
+</script>
+
 <style lang="scss" scoped>
-  .header-nav-sp {
+  .global-nav-sp {
     width: 100%;
     position: absolute;
     top: 0;
@@ -73,7 +88,7 @@
     }
 
     &::before {
-      display: block;
+      display: none;
       content: '';
       width: 100%;
       height: 100vh;
@@ -84,11 +99,6 @@
       left: 0;
       z-index: 0;
       transition: all 0.3s $ease;
-    }
-  }
-  .header-nav-sp.is-open {
-    &::before {
-      opacity: 0.7;
     }
   }
   .menu-btn {
@@ -115,23 +125,6 @@
       transition: all 0.3s $ease;
     }
   }
-  .menu-btn.is-open {
-    .line {
-      background: $white-color;
-    }
-
-    .line-first {
-      transform: translateY(10px) rotate(45deg);
-    }
-
-    .line-second {
-      opacity: 0;
-    }
-
-    .line-thrid {
-      transform: translateY(-10px) rotate(-45deg);
-    }
-  }
   .nav-menu {
     width: 100%;
     height: 100vh;
@@ -151,7 +144,32 @@
     }
   }
 
-  .nav-menu.is-open {
-    transform: translateX(40%);
+  .global-nav-sp.is-open {
+    &::before {
+      display: block;
+      opacity: 0.7;
+    }
+
+    .menu-btn__trigger {
+      .line {
+        background: $white-color;
+      }
+
+      .line-first {
+        transform: translateY(10px) rotate(45deg);
+      }
+
+      .line-second {
+        opacity: 0;
+      }
+
+      .line-thrid {
+        transform: translateY(-10px) rotate(-45deg);
+      }
+    }
+
+    .nav-menu {
+      transform: translateX(40%);
+    }
   }
 </style>
