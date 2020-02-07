@@ -2,7 +2,7 @@
   <div class="container">
     <div>
       <div class="content">
-        <div class="kv">
+        <div class="kv video">
           <iframe
             width="100%"
             src="https://www.youtube.com/embed/NZ84oLS6_Uw"
@@ -11,16 +11,18 @@
             allowfullscreen
           />
         </div>
-        <div class="cards">
-          <Card
-            v-for="list in lists"
-            :arg="list"
-            :key="list.title"
-          />
-        </div>
+        <div>
+          <div class="cards">
+            <Card
+              v-for="list in lists"
+              :arg="list"
+              :key="list.id"
+            />
+          </div>
         <!-- .cards -->
-      </div>
+        </div>
       <!-- content -->
+      </div>
     </div>
   </div>
 </template>

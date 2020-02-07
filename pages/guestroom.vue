@@ -7,7 +7,7 @@
       <PageNavItem
         v-for="guestroom in guestrooms"
         :arg="guestroom"
-        :key="guestroom.title"
+        :key="guestroom.id"
       />
     </nav>
     <div class="content">
@@ -26,7 +26,7 @@
       <Card
         v-for="guestroom in guestrooms"
         :arg="guestroom"
-        :key="guestroom.title"
+        :key="guestroom.id"
       />
     </div>
   </section>

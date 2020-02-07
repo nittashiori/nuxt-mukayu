@@ -4,14 +4,19 @@
       {{ meta.title }}
     </PageTitle>
     <div class="content">
-      <div class="concept-block">
-        <img class="image-visual" src="images/J2-01.jpg">
-        <img class="image-text" src="images/J2-02_n.png">
+      <div class="image-list">
+        <img class="image-list__item" src="images/J2-01.jpg">
+        <img class="image-list__item" src="images/J2-02_n.png">
       </div>
     </div>
-    <div class="concept-block">
-      <img class="image-visual" src="images/J2-03.jpg">
-      <img class="image-text" src="images/J2-04.png">
+    <div class="image-list">
+      <img class="image-list__item" src="images/J2-03.jpg">
+      <img class="image-list__item" src="images/J2-04.png">
+    </div>
+    <div class="btn-wrap">
+      <nuxt-link class="btn--center" to="/">
+        べにや無何有ホームページへ
+      </nuxt-link>
     </div>
   </section>
 </template>

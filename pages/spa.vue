@@ -7,7 +7,7 @@
       <PageNavItem
         v-for="spa in spas"
         :arg="spa"
-        :key="spa.title"
+        :key="spa.id"
       />
     </nav>
     <div class="content">
@@ -43,17 +43,11 @@
           <p class="text">
             薬草には元気を補い「補」、余分なものを捨て「捨」、流れをさらさらにし「流」、からだ全体のバランスを調える「調」、などの力があります。ひとりひとりの体調やご希望、たとえば免疫力の向上「本」、気持ちの安定「心」、長寿「寿」、美容と美肌「美」にあわせて薬草をお選びし、薬草玉や煎じ生薬・薬草茶などに使用いたします。
           </p>
-          <ul class="image-list">
-            <li class="image-list__item">
-              <img src="images/spa/J4-3-02.jpg">
-            </li>
-            <li class="image-list__item">
-              <img src="images/spa/J4-3-03.jpg">
-            </li>
-            <li class="image-list__item">
-              <img src="images/spa/J4-3-04.jpg">
-            </li>
-          </ul>
+          <div class="image-list">
+            <img class="image-list__item" src="images/spa/J4-3-02.jpg">
+            <img class="image-list__item" src="images/spa/J4-3-03.jpg">
+            <img class="image-list__item" src="images/spa/J4-3-04.jpg">
+          </div>
         </section>
         <section class="section">
           <h3 class="section-title">
@@ -78,38 +72,40 @@
           </p>
           <ul class="plan-nav">
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   ７０分
                 </li>
-                <li>ボディ（背面のみ）・デコルテ ＋ 薬草玉</li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__menu">
+                  ボディ（背面のみ）・デコルテ ＋ 薬草玉
+                </li>
+                <li class="plan-nav-detail__price">
                   １７，０００円
                 </li>
               </ul>
             </li>
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   ９０分
                 </li>
-                <li class="plan-nav__menu">
+                <li class="plan-nav-detail__menu">
                   ボディ・デコルテ・ネック ＋ 薬草玉
                 </li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__price">
                   ２１，０００円
                 </li>
               </ul>
             </li>
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   １２０分
                 </li>
-                <li class="plan-nav__menu">
+                <li class="plan-nav-detail__menu">
                   ボディ・デコルテ・ネック・フィトヘッド ＋ 薬草玉
                 </li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__price">
                   ２４，０００円
                 </li>
               </ul>
@@ -128,40 +124,40 @@
           </p>
           <ul class="plan-nav">
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   ７０分
                 </li>
-                <li class="plan-nav__menu">
+                <li class="plan-nav-detail__menu">
                   洗顔・漢方ゴマージュ・フェイシャルマッサージ・薬草玉・整肌
                 </li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__price">
                   １７，０００円
                 </li>
               </ul>
             </li>
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   ９０分
                 </li>
-                <li class="plan-nav__menu">
+                <li class="plan-nav-detail__menu">
                   洗顔・漢方ゴマージュ・フェイシャルマッサージ・ハンドマッサージ・薬草玉・整肌
                 </li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__price">
                   １９，０００円
                 </li>
               </ul>
             </li>
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   １２０分
                 </li>
-                <li class="plan-nav__menu">
+                <li class="plan-nav-detail__menu">
                   洗顔・薬草ゴマージュ・フェイシャルマッサージ・ハンドマッサージ・薬草玉・整肌・フィトヘッド
                 </li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__price">
                   ２３，０００円
                 </li>
               </ul>
@@ -180,40 +176,40 @@
           </p>
           <ul class="plan-nav">
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   ９０分
                 </li>
-                <li class="plan-nav__menu">
+                <li class="plan-nav-detail__menu">
                   ボディ（背中）または脚 ＋ フェイシャル
                 </li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__price">
                   ２５，０００円
                 </li>
               </ul>
             </li>
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   １２０分
                 </li>
-                <li class="plan-nav__menu">
+                <li class="plan-nav-detail__menu">
                   ボディ（背中） 及び 脚 ＋ フェイシャル
                 </li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__price">
                   ２８，０００円
                 </li>
               </ul>
             </li>
             <li class="plan-nav__list">
-              <ul class="plan-nav__detail">
-                <li class="plan-nav__time">
+              <ul class="plan-nav-detail">
+                <li class="plan-nav-detail__time">
                   １２０分
                 </li>
-                <li class="plan-nav__menu">
+                <li class="plan-nav-detail__menu">
                   洗顔・薬草ゴマージュ・フェイシャルマッサージ・ハンドマッサージ・薬草玉・整肌・フィトヘッド
                 </li>
-                <li class="plan-nav__price">
+                <li class="plan-nav-detail__price">
                   ２３，０００円
                 </li>
               </ul>
@@ -226,7 +222,7 @@
       <Card
         v-for="spa in spas"
         :arg="spa"
-        :key="spa.title"
+        :key="spa.id"
       />
     </div>
   </section>
@@ -264,3 +260,76 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .wrap {
+    padding: 60px 0;
+    border-top: 1px solid $text-color;
+
+    @include media(md, max) {
+      padding: 30px 0;
+    }
+  }
+
+  .section {
+    &:not(:first-child) {
+      margin: 60px 0 0;
+
+      @include media(md, max) {
+        margin: 30px 0 0;
+      }
+    }
+  }
+
+  .section-title {
+    font-size: $fts-xx-large;
+
+    @include media(md, max) {
+      font-size: $fts-x-large;
+    }
+  }
+
+  .plan-nav__list {
+    &:not(:first-child) {
+      margin: 20px 0 0;
+    }
+  }
+
+  .plan-nav-detail {
+    @include flex(wrap, flex-start, flex-start);
+
+    @include media(md, max) {
+      @include flex(wrap, space-between, flex-start);
+    }
+
+    &__time {
+      width: 60px;
+    }
+
+    &__menu {
+      width: calc(95% - 60px - 200px);
+      text-indent: -10px;
+      margin: 0 0 0 26px;
+
+      @include media(md, max) {
+        width: calc(90% - 60px);
+      }
+
+      &::before {
+        display: inline-block;
+        content: "ー";
+        color: $text-color;
+      }
+    }
+
+    &__price {
+      width: 200px;
+      margin: 0 0 0 20px;
+
+      @include media(md, max) {
+        width: calc(100% - 90px);
+        margin: 0 0 0 90px;
+      }
+    }
+  }
+</style>

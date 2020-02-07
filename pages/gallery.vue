@@ -3,7 +3,7 @@
     <PageTitle>
       {{ meta.title }}
     </PageTitle>
-    <div class="main-movie">
+    <div class="kv video">
       <iframe
         width="100%"
         src="https://www.youtube.com/embed/sH87jeRu8zs"
@@ -12,8 +12,8 @@
         allowfullscreen
       />
     </div>
-    <div class="sub-movie">
-      <div class="sub-movie__item">
+    <div class="sub-video">
+      <div class="sub-video__item">
         <iframe
           src="https://www.youtube.com/embed/pX0icH5ZptI"
           frameborder="0"
@@ -21,7 +21,7 @@
           allowfullscreen
         />
       </div>
-      <div class="sub-movie__item">
+      <div class="sub-video__item">
         <iframe
           src="https://www.youtube.com/embed/pX0icH5ZptI"
           frameborder="0"
@@ -29,7 +29,7 @@
           allowfullscreen
         />
       </div>
-      <div class="sub-movie__item">
+      <div class="sub-video__item">
         <iframe
           src="https://www.youtube.com/embed/pX0icH5ZptI"
           frameborder="0"
@@ -40,38 +40,38 @@
     </div>
     <div class="photo-gallery">
       <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="http://mukayu.com/wordpress/wp-content/uploads/2016/09/BENIYA_GUEST%E2%97%8E-300x168.jpg" alt="和室">
-        <fipcaption class="photo-pallery__caption">
+        <img class="photo-gallery__image" src="images/J4-3-btn01.jpg" alt="和室">
+        <fipcaption class="photo-gallery__caption">
           和室
         </fipcaption>
       </figure>
       <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="http://mukayu.com/wordpress/wp-content/uploads/2016/09/BENIYA_GUEST%E2%97%8E-300x168.jpg" alt="和室">
-        <fipcaption class="photo-pallery__caption">
+        <img class="photo-gallery__image" src="images/J4-3-btn02.jpg" alt="和室">
+        <fipcaption class="photo-gallery__caption">
           和室
         </fipcaption>
       </figure>
       <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="http://mukayu.com/wordpress/wp-content/uploads/2016/09/BENIYA_GUEST%E2%97%8E-300x168.jpg" alt="和室">
-        <fipcaption class="photo-pallery__caption">
+        <img class="photo-gallery__image" src="images/J4-5-btn01.jpg" alt="和室">
+        <fipcaption class="photo-gallery__caption">
           和室
         </fipcaption>
       </figure>
       <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="http://mukayu.com/wordpress/wp-content/uploads/2016/09/BENIYA_GUEST%E2%97%8E-300x168.jpg" alt="和室">
-        <fipcaption class="photo-pallery__caption">
+        <img class="photo-gallery__image" src="images/J4-6-btn01.jpg" alt="和室">
+        <fipcaption class="photo-gallery__caption">
           和室
         </fipcaption>
       </figure>
       <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="http://mukayu.com/wordpress/wp-content/uploads/2016/09/BENIYA_GUEST%E2%97%8E-300x168.jpg" alt="和室">
-        <fipcaption class="photo-pallery__caption">
+        <img class="photo-gallery__image" src="images/J5-0-btn01.jpg" alt="和室">
+        <fipcaption class="photo-gallery__caption">
           和室
         </fipcaption>
       </figure>
       <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="http://mukayu.com/wordpress/wp-content/uploads/2016/09/BENIYA_GUEST%E2%97%8E-300x168.jpg" alt="和室">
-        <fipcaption class="photo-pallery__caption">
+        <img class="photo-gallery__image" src="images/J5-1-btn01.jpg" alt="和室">
+        <fipcaption class="photo-gallery__caption">
           和室
         </fipcaption>
       </figure>
@@ -101,3 +101,95 @@ export default {
   }
 }
 </script>
+
+<style lang="scss" scoped>
+  .sub-video {
+    margin: 10px 0;
+    @include flex(wrap, flex-start, flex-start);
+
+    @include media(md, max) {
+      flex-direction: column;
+    }
+
+    &__item {
+      width: calc((100% - 20px) / 3);
+      padding-bottom: 18.25%;  /*高さをpaddingで指定(16:9)*/
+      height: 0px;              /*高さはpaddingで指定するためheightは0に*/
+      position: relative;
+
+      @include media(md, max) {
+        width: 100%;
+        padding-bottom: 56.25%;
+        flex-direction: column;
+      }
+
+      &:not(:nth-child(3n)) {
+        margin: 0 10px 0 0;
+
+        @include media(md, max) {
+          margin: 0;
+        }
+      }
+
+      &:not(:first-child) {
+        @include media(md, max) {
+          margin: 10px 0 0;
+        }
+      }
+    }
+
+    iframe {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  .photo-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 10px;
+
+    @include media(md, max) {
+      grid-template-columns: 1fr 1fr;
+    }
+
+    &__item {
+      position: relative;
+    }
+
+    &__caption {
+      opacity: 0;
+      @include flex(wrap, center, center);
+      width: 100%;
+      height: 100%;
+      font-size: $fts-x-large;
+      color: $white-color;
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 1;
+      transition: all 0.3s $ease;
+
+      &::before {
+        display: block;
+        content: "";
+        width: 100%;
+        height: 100%;
+        background: $black-color;
+        opacity: 0.7;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+      }
+    }
+
+    &__caption:hover {
+      opacity: 1;
+    }
+  }
+
+</style>

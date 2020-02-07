@@ -7,7 +7,7 @@
       <PageNavItem
         v-for="facilitie in facilities"
         :arg="facilitie"
-        :key="facilitie.title"
+        :key="facilitie.id"
       />
     </nav>
     <div class="content">
@@ -22,7 +22,7 @@
       <Card
         v-for="facilitie in facilities"
         :arg="facilitie"
-        :key="facilitie.title"
+        :key="facilitie.id"
       />
     </div>
   </section>
