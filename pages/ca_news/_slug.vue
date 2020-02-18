@@ -5,15 +5,17 @@
     </PageTitle>
     <div class="grid">
       <div class="content main">
-        <ArticleNews
-          v-for="post in posts"
+        <ArticleContent
           :title="post.fields.title"
-          :content="post.fields.content"
           :date="post.fields.date"
-          :slug="post.fields.slug"
-          :key="post.fields.slug"
+          :content="post.fields.content"
           class="article-group"
         />
+        <div class="btn-wrap">
+          <nuxt-link to="/ca_news" class="btn btn--center">
+            お知らせ一覧に戻る
+          </nuxt-link>
+        </div>
       </div>
       <nav class="sub-nav">
         <section class="sub-nav-block">
@@ -71,7 +73,7 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
-import ArticleNews from '~/components/ArticleNews.vue'
+import ArticleContent from '~/components/ArticleContent.vue'
 import Meta from '~/assets/js/meta.js'
 import { createClient } from '~/plugins/contentful.js'
 
@@ -80,7 +82,7 @@ const client = createClient()
 export default {
   components: {
     PageTitle,
-    ArticleNews
+    ArticleContent
   },
   mixins: [Meta],
   data () {
@@ -94,11 +96,11 @@ export default {
       }
     }
   },
-  asyncData ({ env }) {
+  asyncData ({ env, params }) {
     return client.getEntries(env.CTF_BLOG_POST_TYPE_ID)
       .then((entries) => {
         return {
-          posts: entries.items
+          post: entries.items[0]
         }
       })
     .catch(console.error) // eslint-disable-line
@@ -115,15 +117,49 @@ export default {
     }
   }
 
-  .article-group {
-    padding: 40px 0;
-
-    &:not(:first-child) {
-      border-top: 1px solid $black-color;
+  .article {
+    &__header {
+      position: relative;
     }
 
-    @include media(md, max) {
-      padding: 25px 0 ;
+    &__title {
+      font-size: $fts-xx-large;
+
+      @include media(md, max) {
+        width: calc(100% - 50px);
+        font-size: $fts-x-large;
+      }
+    }
+
+    &__time {
+      margin: 5px 0 0;
+      font-family: 'PT Serif Caption', Georgia, Times, "Times New Roman", serif;
+
+      @include media(md, max) {
+        width: calc(100% - 50px);
+      }
+    }
+
+    &__content {
+      margin: 20px 0 0;
+      transition: height 0.5s $ease;
+
+      @include media(md, max) {
+        overflow: hidden;
+      }
+    }
+
+    .pulldown-enter-active,
+    .pulldown-leave-active {
+      will-change: height, opacity;
+      transition: height 0.5s $ease, opacity 0.4s $ease;
+      overflow: hidden;
+    }
+
+    .pulldown-enter,
+    .pulldown-leave-to {
+      height: 0 !important;
+      opacity: 0;
     }
   }
 

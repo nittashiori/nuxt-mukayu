@@ -1,10 +1,10 @@
 <template lang="md">
   <div class="article">
-
     <section class="article__header">
       <h3 class="article__title">
         <nuxt-link
-          to="{ name: 'posts-slug', params: { slug: post.fields.slug }}">
+          :to="{ name: 'ca_news-slug', params: { slug: slug }}"
+        >
           {{ title }}
         </nuxt-link>
       </h3>
@@ -14,7 +14,7 @@
       </div>
     </section>
     <transition @enter="start" @after-enter="end" @before-leave="start" @after-leave="end" name="pulldown">
-      <div v-show="isOpen" class="article__content markdown" v-html="$md.render(content)">
+      <div v-show="isOpen" v-html="$md.render(content)" class="article__content markdown">
         {{ content }}
       </div>
     </transition>
@@ -28,15 +28,15 @@ export default {
       type: String,
       required: true
     },
-    content: {
-      type: String,
-      required: true
-    },
     date: {
       type: String,
       required: true
     },
     slug: {
+      type: String,
+      required: true
+    },
+    content: {
       type: String,
       required: true
     }

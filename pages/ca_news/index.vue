@@ -6,6 +6,7 @@
     <div class="grid">
       <div class="content main">
         <ArticleNews
+          v-for="post in posts"
           :title="post.fields.title"
           :content="post.fields.content"
           :date="post.fields.date"
@@ -72,6 +73,7 @@
 import PageTitle from '~/components/PageTitle.vue'
 import ArticleNews from '~/components/ArticleNews.vue'
 import Meta from '~/assets/js/meta.js'
+
 import { createClient } from '~/plugins/contentful.js'
 
 const client = createClient()
@@ -93,7 +95,7 @@ export default {
       }
     }
   },
-  asyncData ({ env }) {
+  asyncData ({ env, params }) {
     return client.getEntries(env.CTF_BLOG_POST_TYPE_ID)
       .then((entries) => {
         return {
@@ -102,6 +104,17 @@ export default {
       })
     .catch(console.error) // eslint-disable-line
   }
+  // asyncData ({ env }) {
+  //   return client.getEntries({
+  //     'content_type': env.CTF_BLOG_POST_TYPE_ID,
+  //     order: '-fields.publishDate',
+  //     'limit': 3
+  //   }).then((entries) => {
+  //     return {
+  //       posts: entries.items
+  //     }
+  //   }).catch(console.error) // eslint-disable-line
+  // }
 }
 </script>
 
