@@ -217,4 +217,15 @@ select {
     }
   }
 }
+.markdown {
+  > * {
+    margin: 20px 0 0;
+  }
+  a {
+    text-decoration: underline;
+    &:hover {
+      text-decoration: none;
+    }
+  }
+}
 </style>

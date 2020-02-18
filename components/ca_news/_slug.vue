@@ -6,7 +6,6 @@
     <div class="grid">
       <div class="content main">
         <ArticleNews
-          v-for="post in posts"
           :title="post.fields.title"
           :content="post.fields.content"
           :date="post.fields.date"
