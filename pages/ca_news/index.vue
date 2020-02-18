@@ -5,9 +5,15 @@
     </PageTitle>
     <div class="grid">
       <div class="content main">
-        <ArticleNews />
-        <ArticleNews />
-        <ArticleNews />
+        <ArticleNews
+          v-for="post in posts"
+          :title="post.fields.title"
+          :content="post.fields.content"
+          :date="post.fields.date"
+          :slug="post.fields.slug"
+          :key="post.fields.slug"
+          class="article-group"
+        />
       </div>
       <nav class="sub-nav">
         <section class="sub-nav-block">
@@ -68,6 +74,10 @@ import PageTitle from '~/components/PageTitle.vue'
 import ArticleNews from '~/components/ArticleNews.vue'
 import Meta from '~/assets/js/meta.js'
 
+import { createClient } from '~/plugins/contentful.js'
+
+const client = createClient()
+
 export default {
   components: {
     PageTitle,
@@ -84,7 +94,27 @@ export default {
         image: 'https://mukayu.com/img/ogp/ca_news.jpg'
       }
     }
+  },
+  asyncData ({ env, params }) {
+    return client.getEntries(env.CTF_BLOG_POST_TYPE_ID)
+      .then((entries) => {
+        return {
+          posts: entries.items
+        }
+      })
+    .catch(console.error) // eslint-disable-line
   }
+  // asyncData ({ env }) {
+  //   return client.getEntries({
+  //     'content_type': env.CTF_BLOG_POST_TYPE_ID,
+  //     order: '-fields.publishDate',
+  //     'limit': 3
+  //   }).then((entries) => {
+  //     return {
+  //       posts: entries.items
+  //     }
+  //   }).catch(console.error) // eslint-disable-line
+  // }
 }
 </script>
 
@@ -94,6 +124,18 @@ export default {
 
     @include media(md, max) {
       width: 100%;
+    }
+  }
+
+  .article-group {
+    padding: 40px 0;
+
+    &:not(:first-child) {
+      border-top: 1px solid $black-color;
+    }
+
+    @include media(md, max) {
+      padding: 25px 0 ;
     }
   }
 
