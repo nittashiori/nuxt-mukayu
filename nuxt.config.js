@@ -113,13 +113,12 @@ export default {
   },
   generate: {
     routes () {
-      return cdaClient.getEntries({
-        'content_type': ctfConfig.CTF_BLOG_POST_TYPE_ID
-      }).then((entries) => {
-        return [
-          ...entries.items.map(entry => `/ca_news/${entry.fields.slug}`)
-        ]
-      })
+      return cdaClient.getEntries(ctfConfig.CTF_BLOG_POST_TYPE_ID)
+        .then((entries) => {
+          return [
+            ...entries.items.map(entry => `/ca_news/${entry.fields.slug}`)
+          ]
+        })
     }
   },
   env: {
