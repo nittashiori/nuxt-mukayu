@@ -38,7 +38,7 @@ body {
 }
 
 body > * ::selection {
-  background: #E9EFE8;
+  background: $primary-color;
 }
 
 h1,h2,h3,h4,h5,h6 {

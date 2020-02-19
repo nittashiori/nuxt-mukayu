@@ -18,14 +18,18 @@ $gray-color: #999999;
 $black-color: #000000;
 $border-color: #cccccc;
 $disabled-color: #afafaf;
+$primary-color: #E9EFE8;
 
 // Font
 // ----------------------------------------
 @mixin font-ja {
-  // font-family: a-otf-ryumin-pr6n, serif;
   font-family: "Istok Web", Helvetica, Arial, sans-serif;
   font-weight: 300;
   font-style: normal;
+}
+
+@mixin font-en {
+  font-family: 'PT Serif Caption', Georgia, Times, "Times New Roman", serif;
 }
 
 
