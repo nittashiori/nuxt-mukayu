@@ -86,7 +86,8 @@ export default {
   styleResources: {
     scss: [
       '~/assets/scss/variables.scss',
-      '~/assets/scss/mixin.scss'
+      '~/assets/scss/mixin.scss',
+      '~/assets/scss/common.scss'
     ]
   },
   /*

@@ -1,6 +1,6 @@
 <template>
-  <a
-    :href="arg.link"
+  <nuxt-link
+    :to="arg.link"
     class="card"
   >
     <figure class="figure">
@@ -9,7 +9,7 @@
         {{ arg.title }}
       </figcaption>
     </figure>
-  </a>
+  </nuxt-link>
 </template>
 
 <script>
