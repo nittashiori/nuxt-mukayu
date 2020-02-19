@@ -133,7 +133,7 @@ export default {
 
     &__time {
       margin: 5px 0 0;
-      font-family: 'PT Serif Caption', Georgia, Times, "Times New Roman", serif;
+      @include font-en;
 
       @include media(md, max) {
         width: calc(100% - 50px);

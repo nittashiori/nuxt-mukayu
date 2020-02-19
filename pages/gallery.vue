@@ -41,39 +41,39 @@
     <div class="photo-gallery">
       <figure class="photo-gallery__item">
         <img class="photo-gallery__image" src="images/J4-3-btn01.jpg" alt="和室">
-        <fipcaption class="photo-gallery__caption">
+        <figcaption class="photo-gallery__caption">
           和室
-        </fipcaption>
+        </figcaption>
       </figure>
       <figure class="photo-gallery__item">
         <img class="photo-gallery__image" src="images/J4-3-btn02.jpg" alt="和室">
-        <fipcaption class="photo-gallery__caption">
+        <figcaption class="photo-gallery__caption">
           和室
-        </fipcaption>
+        </figcaption>
       </figure>
       <figure class="photo-gallery__item">
         <img class="photo-gallery__image" src="images/J4-5-btn01.jpg" alt="和室">
-        <fipcaption class="photo-gallery__caption">
+        <figcaption class="photo-gallery__caption">
           和室
-        </fipcaption>
+        </figcaption>
       </figure>
       <figure class="photo-gallery__item">
         <img class="photo-gallery__image" src="images/J4-6-btn01.jpg" alt="和室">
-        <fipcaption class="photo-gallery__caption">
+        <figcaption class="photo-gallery__caption">
           和室
-        </fipcaption>
+        </figcaption>
       </figure>
       <figure class="photo-gallery__item">
         <img class="photo-gallery__image" src="images/J5-0-btn01.jpg" alt="和室">
-        <fipcaption class="photo-gallery__caption">
+        <figcaption class="photo-gallery__caption">
           和室
-        </fipcaption>
+        </figcaption>
       </figure>
       <figure class="photo-gallery__item">
         <img class="photo-gallery__image" src="images/J5-1-btn01.jpg" alt="和室">
-        <fipcaption class="photo-gallery__caption">
+        <figcaption class="photo-gallery__caption">
           和室
-        </fipcaption>
+        </figcaption>
       </figure>
     </div>
   </section>
