@@ -45,6 +45,13 @@ export default {
     return {
       lists: Data.lists
     }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+
+      setTimeout(() => this.$nuxt.$loading.finish(), 4000)
+    })
   }
 }
 </script>
