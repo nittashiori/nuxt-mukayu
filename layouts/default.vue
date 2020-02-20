@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Loading />
     <Header />
     <nuxt />
     <Footer />
@@ -10,12 +11,14 @@
 <script>
 import Header from '~/components/Header'
 import Footer from '~/components/Footer'
+import Loading from '~/components/Loading'
 import GlobalNavSp from '~/components/GlobalNavSp'
 
 export default {
   components: {
     Header,
     Footer,
+    Loading,
     GlobalNavSp
   }
 }
