@@ -1,5 +1,5 @@
 <template>
-  <div class="loading">
+  <div v-if="loading" class="loading">
     <div class="loading__inner">
       <img src="images/mukayu_footer.gif" alt="無何有ロゴ" class="loading__logo">
       <p class="loading__text">
@@ -40,7 +40,7 @@ export default {
   color: $text-color;
   text-align: center;
   font-size: 30px;
-  opacity: 1;
+  opacity: 0;
   animation: loading-start 2s ease-in-out forwards;
 
   &__inner {
@@ -53,21 +53,6 @@ export default {
     height: 200px;
     border-radius: 100%;
     background: $white-color;
-    position: relative;
-    z-index: 0;
-    &::before {
-      display: block;
-      content: '';
-      width: 208px;
-      height: 208px;
-      border-radius: 100%;
-      border-top: 4px solid darken($primary-color, 20%);;
-      position: absolute;
-      top: -4px;
-      left: -4px;
-      z-index: -1;
-      animation: loading-spin 1s linear infinite;
-    }
   }
 
   &__logo {
@@ -92,15 +77,6 @@ export default {
   }
   100% {
     opacity: 0;
-    visibility: hidden;
-  }
-}
-@keyframes loading-spin {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
   }
 }
 </style>

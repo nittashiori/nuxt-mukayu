@@ -1,26 +1,28 @@
 <template>
   <div class="container">
-    <div class="content">
-      <div class="kv video">
-        <iframe
-          width="100%"
-          src="https://www.youtube.com/embed/NZ84oLS6_Uw"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
-      </div>
-      <div>
-        <div class="cards">
-          <Card
-            v-for="list in lists"
-            :arg="list"
-            :key="list.id"
+    <div>
+      <div class="content">
+        <div class="kv video">
+          <iframe
+            width="100%"
+            src="https://www.youtube.com/embed/NZ84oLS6_Uw"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
           />
         </div>
-      <!-- .cards -->
+        <div>
+          <div class="cards">
+            <Card
+              v-for="list in lists"
+              :arg="list"
+              :key="list.id"
+            />
+          </div>
+        <!-- .cards -->
+        </div>
+      <!-- content -->
       </div>
-    <!-- content -->
     </div>
   </div>
 </template>
@@ -43,6 +45,13 @@ export default {
     return {
       lists: Data.lists
     }
+  },
+  mounted () {
+    this.$nextTick(() => {
+      this.$nuxt.$loading.start()
+
+      setTimeout(() => this.$nuxt.$loading.finish(), 4000)
+    })
   }
 }
 </script>
