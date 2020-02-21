@@ -65,7 +65,8 @@ export default {
   ** Plugins to load before mounting the App
   */
   plugins: [
-    { src: '~plugins/contentful' }
+    { src: '~plugins/contentful' },
+    { src: '~plugins/vue-easy-lightbox', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules

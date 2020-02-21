@@ -38,54 +38,38 @@
         />
       </div>
     </div>
-    <div class="photo-gallery">
-      <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="images/J4-3-btn01.jpg" alt="和室">
-        <figcaption class="photo-gallery__caption">
-          和室
-        </figcaption>
-      </figure>
-      <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="images/J4-3-btn02.jpg" alt="和室">
-        <figcaption class="photo-gallery__caption">
-          和室
-        </figcaption>
-      </figure>
-      <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="images/J4-5-btn01.jpg" alt="和室">
-        <figcaption class="photo-gallery__caption">
-          和室
-        </figcaption>
-      </figure>
-      <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="images/J4-6-btn01.jpg" alt="和室">
-        <figcaption class="photo-gallery__caption">
-          和室
-        </figcaption>
-      </figure>
-      <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="images/J5-0-btn01.jpg" alt="和室">
-        <figcaption class="photo-gallery__caption">
-          和室
-        </figcaption>
-      </figure>
-      <figure class="photo-gallery__item">
-        <img class="photo-gallery__image" src="images/J5-1-btn01.jpg" alt="和室">
-        <figcaption class="photo-gallery__caption">
-          和室
-        </figcaption>
-      </figure>
+    <div class="gallery-area">
+      <div class="gallery">
+        <div
+          v-for="(img, idx) in imgs"
+          :key="idx"
+          @click="() => show(idx)"
+          class="gallery__item"
+        >
+          <img :src="img.src ? img.src : img">
+        </div>
+      </div>
+
+      <vue-easy-lightbox
+        :visible="visible"
+        :index="index"
+        :imgs="imgs"
+        :moveDisabled="false"
+        @hide="handleHide"
+      />
     </div>
   </section>
 </template>
 
 <script>
+import VueEasyLightbox from 'vue-easy-lightbox'
 import PageTitle from '~/components/PageTitle.vue'
 import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
-    PageTitle
+    PageTitle,
+    VueEasyLightbox
   },
   mixins: [Meta],
   data () {
@@ -96,7 +80,44 @@ export default {
         type: 'article',
         url: 'https://mukayu.com/gallery',
         image: 'https://mukayu.com/img/ogp/gallery.jpg'
-      }
+      },
+      imgs: [
+        {
+          title: 'スパ円庭施術院',
+          src: 'images/J4-3-btn01.jpg'
+        },
+        {
+          title: '円庭施術院',
+          src: 'images/J4-3-btn02.jpg'
+        },
+        {
+          title: '漢方',
+          src: 'images/spa/J4-3-03.jpg'
+        },
+        {
+          title: 'アメニティ',
+          src: 'images/J4-6-btn01.jpg'
+        },
+        {
+          title: '露天風呂',
+          src: 'images/J5-0-btn01.jpg'
+        },
+        {
+          title: '和室その2',
+          src: 'images/J5-1-btn01.jpg'
+        }
+      ],
+      visible: false,
+      index: 0 // default
+    }
+  },
+  methods: {
+    show (index) {
+      this.index = index
+      this.visible = true
+    },
+    handleHide () {
+      this.visible = false
     }
   }
 }
@@ -147,7 +168,7 @@ export default {
     }
   }
 
-  .photo-gallery {
+  .gallery {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
     gap: 10px;
@@ -158,6 +179,12 @@ export default {
 
     &__item {
       position: relative;
+      cursor: pointer;
+      transition: all 0.3s $ease;
+
+      &:hover {
+        opacity: 0.7;
+      }
     }
 
     &__caption {
@@ -191,5 +218,12 @@ export default {
       opacity: 1;
     }
   }
-
+  .image {
+    float: left;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    border: 1px solid #ebebeb;
+    margin: 5px;
+  }
 </style>
