@@ -66,6 +66,7 @@ export default {
   */
   plugins: [
     { src: '~plugins/contentful' },
+    { src: '~plugins/vue-lazyload', ssr: false },
     { src: '~plugins/vue-easy-lightbox', mode: 'client' }
   ],
   /*

@@ -46,7 +46,9 @@
           @click="() => show(idx)"
           class="gallery__item"
         >
-          <img v-lazy="img.src ? img.src : img">
+          <client-only>
+            <img v-lazy="img.src ? img.src : img">
+          </client-only>
         </div>
       </div>
 
