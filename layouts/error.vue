@@ -2,8 +2,11 @@
   <div>
     <Header />
     <section class="container">
-      <PageTitle>
-        {{ title }}
+      <PageTitle v-if="error.statusCode === 404">
+        ページが見つかりませんでした
+      </PageTitle>
+      <PageTitle v-else>
+        エラーが発生しました
       </PageTitle>
       <p class="text">
         申し訳ありません。<br>
@@ -26,9 +29,10 @@ export default {
   components: {
     PageTitle
   },
-  data () {
-    return {
-      title: 'ページが見つかりませんでした'
+  props: {
+    error: {
+      type: Object,
+      default: null
     }
   }
 }

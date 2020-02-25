@@ -121,7 +121,8 @@ export default {
             ...entries.items.map(entry => `/ca_news/${entry.fields.slug}`)
           ]
         })
-    }
+    },
+    fallback: true
   },
   env: {
     CTF_SPACE_ID: ctfConfig.CTF_SPACE_ID,
