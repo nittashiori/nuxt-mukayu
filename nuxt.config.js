@@ -66,7 +66,7 @@ export default {
   */
   plugins: [
     { src: '~plugins/contentful' },
-    { src: '~plugins/vue-easy-lightbox', ssr: false }
+    { src: '~plugins/vue-easy-lightbox', mode: 'client' }
   ],
   /*
   ** Nuxt.js dev-modules

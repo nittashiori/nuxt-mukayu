@@ -46,7 +46,7 @@
           @click="() => show(idx)"
           class="gallery__item"
         >
-          <img :src="img.src ? img.src : img">
+          <img v-lazy="img.src ? img.src : img">
         </div>
       </div>
 
@@ -62,14 +62,12 @@
 </template>
 
 <script>
-import VueEasyLightbox from 'vue-easy-lightbox'
 import PageTitle from '~/components/PageTitle.vue'
 import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
-    PageTitle,
-    VueEasyLightbox
+    PageTitle
   },
   mixins: [Meta],
   data () {
