@@ -28,7 +28,10 @@ export default {
       { hid: 'og:url', property: 'og:url', content: 'https://nuxt-mukayu.netlify.com/' },
       { hid: 'og:title', property: 'og:title', content: 'mukayu' },
       { hid: 'og:description', property: 'og:description', content: '加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。' },
-      { hid: 'og:image', property: 'og:image', content: '/images/ogp.jpg' }
+      { hid: 'og:image', property: 'og:image', content: '/images/ogp.jpg' },
+      { hid: 'twitter:card', name: 'twitter:card', content: 'summary_large_image' },
+      { hid: 'twitter:title', name: 'twitter:title', content: 'mukayu' },
+      { hid: 'twitter:image', name: 'twitter:image', content: '/images/ogp.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicons.png' },
