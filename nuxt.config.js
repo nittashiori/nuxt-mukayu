@@ -31,7 +31,7 @@ export default {
       { hid: 'og:image', property: 'og:image', content: 'https://example.com/img/ogp/common.jpg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicons.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Istok+Web&display=swap' }
     ],
     __dangerouslyDisableSanitizers: ['script'],
