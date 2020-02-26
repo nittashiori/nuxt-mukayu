@@ -34,7 +34,9 @@ export default {
       { hid: 'twitter:image', name: 'twitter:image', content: '/images/ogp.jpg' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicons.png' },
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
+      { rel: 'icon', size: '256x256', href: '/android-chrome-256x256.png' },
+      { rel: 'apple-touch-icon', href: '/apple-touch-icon.png' },
       { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=Istok+Web&display=swap' }
     ],
     __dangerouslyDisableSanitizers: ['script'],
