@@ -25,10 +25,10 @@ export default {
       { hid: 'description', name: 'description', content: '加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。' },
       { hid: 'og:site_name', property: 'og:site_name', content: 'mukayu' },
       { hid: 'og:type', property: 'og:type', content: 'website' },
-      { hid: 'og:url', property: 'og:url', content: 'https://example.com' },
+      { hid: 'og:url', property: 'og:url', content: 'https://nuxt-mukayu.netlify.com/' },
       { hid: 'og:title', property: 'og:title', content: 'mukayu' },
       { hid: 'og:description', property: 'og:description', content: '加賀山代温泉、薬師山の高台に静かにたたずむ宿。宿の名の「無何有」とは空っぽの中の豊かさという意味。静かで平和な時間が流れています。' },
-      { hid: 'og:image', property: 'og:image', content: 'https://example.com/img/ogp/common.jpg' }
+      { hid: 'og:image', property: 'og:image', content: '/images/ogp.jpg' }
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicons.png' },
