@@ -1,16 +1,15 @@
 <template>
   <div class="container">
     <div class="content">
-      <view-video>
+      <div class="kv video">
         <iframe
-          slot="video"
           width="100%"
           src="https://www.youtube.com/embed/NZ84oLS6_Uw"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
         />
-      </view-video>
+      </div>
       <div>
         <div class="cards">
           <card
@@ -27,13 +26,11 @@
 </template>
 
 <script>
-import ViewVideo from '~/components/ViewVideo.vue'
 import Card from '~/components/Card.vue'
 import Data from '~/store/data.json'
 
 export default {
   components: {
-    ViewVideo,
     Card
   },
   head () {
