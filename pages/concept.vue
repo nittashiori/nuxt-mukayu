@@ -3,14 +3,12 @@
     <pageTitle>
       {{ meta.title }}
     </pageTitle>
-    <div class="content">
-      <div class="image-list">
-        <img class="image-list__item" src="images/J2-01.jpg">
-        <img class="image-list__item" src="images/J2-02_n.png">
-      </div>
+    <div class="image-list animation-trigger1">
+      <img class="image-list__item animation-target1 animation-target" src="images/J2-01.jpg">
+      <img class="image-list__item" src="images/J2-02_n.png">
     </div>
-    <div class="image-list">
-      <img class="image-list__item" src="images/J2-03.jpg">
+    <div class="image-list animation-trigger2">
+      <img class="image-list__item animation-target2 animation-target" src="images/J2-03.jpg">
       <img class="image-list__item" src="images/J2-04.png">
     </div>
     <div class="btn-wrap">
@@ -40,6 +38,45 @@ export default {
         image: 'https://mukayu.com/img/ogp/concept.jpg'
       }
     }
+  },
+  mounted () {
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger1',
+        triggerHook: 'onEnter',
+        offset: 200,
+        reverse: false
+      })
+      .setTween('.animation-target1', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene1)
+
+    const scene2 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger2',
+        triggerHook: 'onEnter',
+        offset: 200,
+        reverse: false
+      })
+      .setTween('.animation-target2', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene2)
   }
 }
 </script>
+
+<style lang="scss">
+  .animation-target {
+   opacity: 0;
+   transform: translateY(50px);
+   transition: all 0.4s $fadeCubic;
+  }
+</style>

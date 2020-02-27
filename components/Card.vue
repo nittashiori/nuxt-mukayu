@@ -1,9 +1,9 @@
 <template>
   <nuxt-link
     :to="arg.link"
-    class="card"
+    class="card animation-trigger1"
   >
-    <figure class="figure">
+    <figure class="figure animation-target1 animation-target">
       <img :src="`${arg.image}`" :alt="`${arg.title}イメージ`">
       <figcaption class="figure-caption">
         {{ arg.title }}
@@ -19,6 +19,22 @@ export default {
       type: Object,
       required: true
     }
+  },
+  mounted () {
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger1',
+        triggerHook: 'onEnter',
+        offset: 100,
+        reverse: false
+      })
+      .setTween('.animation-target1', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene1)
   }
 }
 </script>
@@ -45,5 +61,10 @@ export default {
     overflow: hidden;
     white-space: nowrap;
     text-overflow: ellipsis;
+  }
+  .animation-target {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.4s $fadeCubic;
   }
 </style>
