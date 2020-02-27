@@ -2,9 +2,11 @@
 
 > 温泉サイト「むかゆう」をnuxtで構築
 
-http://mukayu.com/
+元サイト　　：http://mukayu.com/
 
-gitはGUIを使わずVSCodeを使いコマンドラインで管理。
+テストサイト：https://nuxt-mukayu.netlify.com/
+
+pw: mukayu
 
 ## Build Setup
 
