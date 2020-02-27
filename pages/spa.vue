@@ -1,10 +1,10 @@
 <template>
   <section class="container">
-    <PageTitle>
+    <page-title>
       {{ meta.title }}
-    </PageTitle>
+    </page-title>
     <nav class="page-nav">
-      <PageNavItem
+      <page-nav-item
         v-for="spa in spas"
         :arg="spa"
         :key="spa.id"

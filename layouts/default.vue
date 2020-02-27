@@ -1,23 +1,23 @@
 <template>
   <div>
-    <Loading />
-    <Header />
+    <loading />
+    <global-header />
     <nuxt />
-    <Footer />
-    <GlobalNavSp />
+    <global-footer />
+    <global-nav-sp />
   </div>
 </template>
 
 <script>
-import Header from '~/components/Header'
-import Footer from '~/components/Footer'
+import GlobalHeader from '~/components/GlobalHeader'
+import GlobalFooter from '~/components/GlobalFooter'
 import Loading from '~/components/Loading'
 import GlobalNavSp from '~/components/GlobalNavSp'
 
 export default {
   components: {
-    Header,
-    Footer,
+    GlobalHeader,
+    GlobalFooter,
     Loading,
     GlobalNavSp
   }

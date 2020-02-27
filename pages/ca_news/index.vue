@@ -1,11 +1,11 @@
 <template>
   <section class="container">
-    <PageTitle>
+    <page-title>
       {{ meta.title }}
-    </PageTitle>
+    </page-title>
     <div class="grid">
       <div class="content main">
-        <ArticleNews
+        <article-news
           v-for="post in posts"
           :title="post.fields.title"
           :content="post.fields.content"
