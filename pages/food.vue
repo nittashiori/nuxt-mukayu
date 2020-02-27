@@ -11,9 +11,9 @@
       />
     </nav>
     <div class="content">
-      <div class="page-kv">
-        <img src="images/food/J6-0-01d.jpg">
-      </div>
+      <page-kv>
+        <img slot="image" data-src="images/food/J6-0-01d.jpg">
+      </page-kv>
     </div>
     <div class="cards">
       <card
@@ -27,6 +27,7 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import PageKv from '~/components/PageKv.vue'
 import PageNavItem from '~/components/PageNavItem.vue'
 import Card from '~/components/Card.vue'
 import Data from '~/store/data.json'
@@ -35,6 +36,7 @@ import Meta from '~/assets/js/meta.js'
 export default {
   components: {
     PageTitle,
+    PageKv,
     PageNavItem,
     Card
   },
@@ -47,7 +49,8 @@ export default {
         type: 'article',
         url: 'https://mukayu.com/food',
         image: 'https://mukayu.com/img/ogp/food.jpg'
-      }
+      },
+      kv: 'images/food/J6-0-01d.jpg'
     }
   },
   asyncData (context) {

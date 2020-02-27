@@ -11,9 +11,9 @@
       />
     </nav>
     <div class="content">
-      <div class="page-kv">
-        <img src="images/guestroom/J5-0-01.jpg">
-      </div>
+      <page-kv>
+        <img slot="image" data-src="images/guestroom/J5-0-01.jpg">
+      </page-kv>
       <p class="text">
         ◎べにや無何有は、和室8室、洋室2室、和洋室6室、特別室2室の計16室がございます。<br>
         ◎全ての客室からは、自然の山庭の眺めを楽しむことができます。<br>
@@ -34,6 +34,7 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import PageKv from '~/components/PageKv.vue'
 import PageNavItem from '~/components/PageNavItem.vue'
 import Card from '~/components/Card.vue'
 import Data from '~/store/data.json'
@@ -42,6 +43,7 @@ import Meta from '~/assets/js/meta.js'
 export default {
   components: {
     PageTitle,
+    PageKv,
     PageNavItem,
     Card
   },
