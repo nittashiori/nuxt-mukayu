@@ -1,10 +1,10 @@
 <template>
   <section class="container">
-    <PageTitle>
+    <page-title>
       {{ meta.title }}
-    </PageTitle>
+    </page-title>
     <div class="grid">
-      <Transportation>
+      <transportation>
         <template slot="title">
           【飛行機】<br>
           小松空港より
@@ -21,8 +21,8 @@
         <template slot="button">
           <a class="btn" href="http://www.komatsuairport.jp/komatsusypher/www/flight/index.jsp" target="_blank">小松空港フライト情報</a>
         </template>
-      </Transportation>
-      <Transportation>
+      </transportation>
+      <transportation>
         <template slot="title">
           【電車】<br>
           加賀温泉駅より
@@ -45,8 +45,8 @@
         <template slot="button">
           <a class="btn" href="http://www.hyperdia.com/" target="_blank">ハイパーダイヤ</a>
         </template>
-      </Transportation>
-      <Transportation>
+      </transportation>
+      <transportation>
         <template slot="title">
           【自動車】<br>
           北陸自動車道
@@ -62,7 +62,7 @@
         <template slot="button">
           <a class="btn" href="https://www.c-nexco.co.jp/" target="_blank">NEXCO中日本</a>
         </template>
-      </Transportation>
+      </transportation>
     </div>
     <div class="section">
       <h3 class="sub-title">

@@ -12,7 +12,7 @@
       </div>
       <div>
         <div class="cards">
-          <Card
+          <card
             v-for="list in lists"
             :arg="list"
             :key="list.id"

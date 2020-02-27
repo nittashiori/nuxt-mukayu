@@ -17,7 +17,7 @@
           <a href="/">EN</a>
         </p>
       </div>
-      <GlobalNavPc />
+      <global-nav-pc />
     </div>
   </header>
 </template>
