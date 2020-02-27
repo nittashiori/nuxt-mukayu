@@ -43,10 +43,14 @@
           <p class="text">
             薬草には元気を補い「補」、余分なものを捨て「捨」、流れをさらさらにし「流」、からだ全体のバランスを調える「調」、などの力があります。ひとりひとりの体調やご希望、たとえば免疫力の向上「本」、気持ちの安定「心」、長寿「寿」、美容と美肌「美」にあわせて薬草をお選びし、薬草玉や煎じ生薬・薬草茶などに使用いたします。
           </p>
-          <div class="image-list">
-            <img class="image-list__item" src="images/spa/J4-3-02.jpg">
-            <img class="image-list__item" src="images/spa/J4-3-03.jpg">
-            <img class="image-list__item" src="images/spa/J4-3-04.jpg">
+          <div class="image-list animation-trigger1">
+            <img class="image-list__item animation-target1 animation-target" src="images/spa/J4-3-02.jpg">
+          </div>
+          <div class="image-list animation-trigger2">
+            <img class="image-list__item animation-target2 animation-target" src="images/spa/J4-3-03.jpg">
+          </div>
+          <div class="image-list animation-trigger3">
+            <img class="image-list__item animation-target3 animation-target" src="images/spa/J4-3-04.jpg">
           </div>
         </section>
         <section class="section">
@@ -257,6 +261,52 @@ export default {
     return {
       spas: Data.spas
     }
+  },
+  mounted () {
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger1',
+        triggerHook: 'onEnter',
+        offset: 100,
+        reverse: false
+      })
+      .setTween('.animation-target1', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene1)
+
+    const scene2 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger2',
+        triggerHook: 'onEnter',
+        offset: 100,
+        reverse: false
+      })
+      .setTween('.animation-target2', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene2)
+
+    const scene3 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger3',
+        triggerHook: 'onEnter',
+        offset: 100,
+        reverse: false
+      })
+      .setTween('.animation-target3', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene3)
   }
 }
 </script>
@@ -331,5 +381,10 @@ export default {
         margin: 0 0 0 90px;
       }
     }
+  }
+  .animation-target {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.4s $fadeCubic;
   }
 </style>
