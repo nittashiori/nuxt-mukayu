@@ -1,6 +1,5 @@
 <template>
   <div>
-    <global-header />
     <section class="container">
       <page-title v-if="error.statusCode === 404">
         ページが見つかりませんでした
@@ -18,23 +17,15 @@
         </nuxt-link>
       </div>
     </section>
-    <global-footer />
-    <global-nav-sp />
   </div>
 </template>
 
 <script>
-import GlobalHeader from '~/components/GlobalHeader'
-import GlobalFooter from '~/components/GlobalFooter'
 import PageTitle from '~/components/PageTitle.vue'
-import GlobalNavSp from '~/components/GlobalNavSp'
 
 export default {
   components: {
-    GlobalHeader,
-    GlobalFooter,
-    PageTitle,
-    GlobalNavSp
+    PageTitle
   },
   props: {
     error: {
