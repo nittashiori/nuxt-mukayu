@@ -78,7 +78,7 @@ export default {
 <style lang="scss" scoped>
   .global-nav-sp {
     width: 100%;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     display: none;
