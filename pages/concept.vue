@@ -1,8 +1,8 @@
 <template>
   <section class="container">
-    <PageTitle>
+    <pageTitle>
       {{ meta.title }}
-    </PageTitle>
+    </pageTitle>
     <div class="content">
       <div class="image-list">
         <img class="image-list__item" src="images/J2-01.jpg">

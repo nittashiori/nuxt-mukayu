@@ -1,8 +1,8 @@
 <template>
   <section class="container">
-    <PageTitle>
+    <page-title>
       {{ meta.title }}
-    </PageTitle>
+    </page-title>
     <div class="kv video">
       <iframe
         width="100%"

@@ -1,10 +1,10 @@
 <template>
   <section class="container">
-    <PageTitle>
+    <page-title>
       {{ meta.title }}
-    </PageTitle>
+    </page-title>
     <nav class="page-nav">
-      <PageNavItem
+      <page-nav-item
         v-for="guestroom in guestrooms"
         :arg="guestroom"
         :key="guestroom.id"
@@ -23,7 +23,7 @@
       </p>
     </div>
     <div class="cards">
-      <Card
+      <card
         v-for="guestroom in guestrooms"
         :arg="guestroom"
         :key="guestroom.id"

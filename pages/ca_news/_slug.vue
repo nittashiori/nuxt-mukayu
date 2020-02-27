@@ -1,11 +1,11 @@
 <template>
   <section class="container">
-    <PageTitle>
+    <page-title>
       {{ meta.title }}
-    </PageTitle>
+    </page-title>
     <div class="grid">
       <div class="content main">
-        <ArticleContent
+        <article-content
           :title="post.fields.title"
           :date="post.fields.date"
           :content="post.fields.content"
