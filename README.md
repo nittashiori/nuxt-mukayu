@@ -28,28 +28,28 @@ $ yarn generate
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
 
 ## Commit Prefix
-🎉  :tada: 初めてのコミット（Initial Commit）
+:tada: 初めてのコミット（Initial Commit）
 
-🔖  :bookmark: バージョンタグ（Version Tag）
+:bookmark: バージョンタグ（Version Tag）
 
-👍 :+1: 機能修正（Function modificationｖ）
+:+1: 機能修正（Function modificationｖ）
 
-✨  :sparkles: 新機能（New Feature）
+:sparkles: 新機能（New Feature）
 
-🐛  :bug: バグ修正（Bugfix）
+:bug: バグ修正（Bugfix）
 
-♻️  :recycle: リファクタリング(Refactoring)
+:recycle: リファクタリング(Refactoring)
 
-📚  :books: ドキュメント（Documentation）
+:books: ドキュメント（Documentation）
 
-🎨  :art: デザインUI/UX(Accessibility)
+:art: デザインUI/UX(Accessibility)
 
-🐎  :horse: パフォーマンス（Performance）
+:horse: パフォーマンス（Performance）
 
-🔧  :wrench: ツール（Tooling）
+:wrench: ツール（Tooling）
 
-🚨  :rotating_light: テスト（Tests）
+:rotating_light: テスト（Tests）
 
-🚿  :shower: 削除（Removal）
+:shower: 削除（Removal）
 
-🚧  :construction: WIP(Work In Progress)
+:construction: WIP(Work In Progress)
