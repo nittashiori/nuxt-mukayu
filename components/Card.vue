@@ -4,7 +4,9 @@
     class="card animation-trigger1"
   >
     <figure class="figure animation-target1 animation-target">
-      <img :src="`${arg.image}`" :alt="`${arg.title}イメージ`">
+      <client-only>
+        <img v-lazy="`${arg.image}`" :alt="`${arg.title}イメージ`">
+      </client-only>
       <figcaption class="figure-caption">
         {{ arg.title }}
       </figcaption>

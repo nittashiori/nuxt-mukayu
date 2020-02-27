@@ -11,9 +11,9 @@
       />
     </nav>
     <div class="content">
-      <div class="page-kv">
-        <img src="images/spa/J4-3-01.jpg">
-      </div>
+      <page-kv>
+        <img slot="image" data-src="images/spa/J4-3-01.jpg">
+      </page-kv>
       <p class="text">
         円庭施術院では外来のお客様の施術もお受け致します。トリートメントは予約制となっております。<br>
         ※表示されている価格は、２０１４年４月１日からのものです。<br>
@@ -234,6 +234,7 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import PageKv from '~/components/PageKv.vue'
 import PageNavItem from '~/components/PageNavItem.vue'
 import Card from '~/components/Card.vue'
 import Data from '~/store/data.json'
@@ -242,6 +243,7 @@ import Meta from '~/assets/js/meta.js'
 export default {
   components: {
     PageTitle,
+    PageKv,
     PageNavItem,
     Card
   },
