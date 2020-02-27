@@ -3,7 +3,7 @@
     <h3 class="transportation__title">
       <slot name="title" />
     </h3>
-    <p class="text">
+    <p class="transportation__text text">
       <slot name="text" />
     </p>
     <div class="btn-wrap">
@@ -21,6 +21,16 @@
 
     &__title {
       font-size: $fts-xx-large;
+
+      @include media(md, max) {
+        width: 100%;
+      }
+    }
+
+    &__text {
+      @include media(md, max) {
+        width: 100%;
+      }
     }
   }
 </style>
