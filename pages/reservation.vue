@@ -3,15 +3,16 @@
     <page-title>
       {{ meta.title }}
     </page-title>
-    <div class="kv video">
+    <view-video>
       <iframe
+        slot="video"
         width="100%"
         src="https://www.youtube.com/embed/sH87jeRu8zs"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
-    </div>
+    </view-video>
     <p class="text">
       お予約は、インターネット、またはお電話にてお申し込みください。
     </p>
@@ -324,11 +325,13 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import ViewVideo from '~/components/ViewVideo.vue'
 import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
-    PageTitle
+    PageTitle,
+    ViewVideo
   },
   mixins: [Meta],
   data () {

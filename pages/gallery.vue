@@ -3,39 +3,46 @@
     <page-title>
       {{ meta.title }}
     </page-title>
-    <div class="kv video">
+    <view-video>
       <iframe
+        slot="video"
         width="100%"
         src="https://www.youtube.com/embed/sH87jeRu8zs"
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
       />
-    </div>
+    </view-video>
     <div class="sub-video">
       <div class="sub-video__item">
-        <iframe
-          src="https://www.youtube.com/embed/pX0icH5ZptI"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
+        <lazy-component tag="div">
+          <iframe
+            src="https://www.youtube.com/embed/pX0icH5ZptI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </lazy-component>
       </div>
       <div class="sub-video__item">
-        <iframe
-          src="https://www.youtube.com/embed/pX0icH5ZptI"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
+        <lazy-component tag="div">
+          <iframe
+            src="https://www.youtube.com/embed/pX0icH5ZptI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </lazy-component>
       </div>
       <div class="sub-video__item">
-        <iframe
-          src="https://www.youtube.com/embed/pX0icH5ZptI"
-          frameborder="0"
-          allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-          allowfullscreen
-        />
+        <lazy-component tag="div">
+          <iframe
+            src="https://www.youtube.com/embed/pX0icH5ZptI"
+            frameborder="0"
+            allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+            allowfullscreen
+          />
+        </lazy-component>
       </div>
     </div>
     <div class="gallery-area">
@@ -65,11 +72,13 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import ViewVideo from '~/components/ViewVideo.vue'
 import Meta from '~/assets/js/meta.js'
 
 export default {
   components: {
-    PageTitle
+    PageTitle,
+    ViewVideo
   },
   mixins: [Meta],
   data () {
@@ -180,7 +189,6 @@ export default {
     &__item {
       position: relative;
       cursor: pointer;
-      transition: all 0.3s $ease;
 
       &:hover {
         opacity: 0.7;

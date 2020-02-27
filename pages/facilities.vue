@@ -11,9 +11,9 @@
       />
     </nav>
     <div class="content">
-      <div class="page-kv">
-        <img src="images/facilities/J7-0-01.jpg">
-      </div>
+      <page-kv>
+        <img slot="image" data-src="images/facilities/J7-0-01.jpg">
+      </page-kv>
       <p class="text">
         ・Wi-Fi が全館でご利用いただけます。
       </p>
@@ -30,6 +30,7 @@
 
 <script>
 import PageTitle from '~/components/PageTitle.vue'
+import PageKv from '~/components/PageKv.vue'
 import PageNavItem from '~/components/PageNavItem.vue'
 import Card from '~/components/Card.vue'
 import Data from '~/store/data.json'
@@ -38,6 +39,7 @@ import Meta from '~/assets/js/meta.js'
 export default {
   components: {
     PageTitle,
+    PageKv,
     PageNavItem,
     Card
   },
