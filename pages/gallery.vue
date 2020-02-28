@@ -56,7 +56,7 @@
           <picture>
             <client-only>
               <source :srcset="img.webp ? img.webp : img" type="image/webp">
-              <img v-lazy="img.src ? img.src : img">
+              <img v-lazy="img.src ? img.src : img" alt="image">
             </client-only>
           </picture>
         </div>
