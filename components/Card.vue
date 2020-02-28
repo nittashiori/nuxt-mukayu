@@ -1,9 +1,9 @@
 <template>
   <nuxt-link
     :to="arg.link"
-    class="card animation-trigger1"
+    class="card"
   >
-    <figure class="figure animation-target1 animation-target">
+    <figure class="figure">
       <picture>
         <source :srcset="`${arg.webp}`" type="image/webp">
         <img :src="`${arg.image}`" :alt="`${arg.title}イメージ`">
@@ -23,23 +23,6 @@ export default {
       type: Object,
       required: true
     }
-  },
-  mounted () {
-    const scene1 = this.$scrollmagic
-      .scene({
-        triggerElement: '.animation-trigger1',
-        triggerHook: 'onEnter',
-        offset: 100,
-        duration: 500,
-        reverse: false
-      })
-      .setTween('.animation-target1', {
-        css: {
-          opacity: '1',
-          transform: 'translateY(0)'
-        }
-      })
-    this.$scrollmagic.addScene(scene1)
   }
 }
 </script>

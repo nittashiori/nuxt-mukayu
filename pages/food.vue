@@ -16,11 +16,12 @@
         <img slot="image" data-src="images/food/J6-0-01d.jpg" alt="蟹料理">
       </page-kv>
     </div>
-    <div class="cards">
+    <div class="cards animation-trigger1">
       <card
         v-for="food in foods"
         :arg="food"
         :key="food.id"
+        class="animation-target1 animation-target"
       />
     </div>
   </section>
@@ -58,6 +59,23 @@ export default {
     return {
       foods: Data.foods
     }
+  },
+  mounted () {
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger1',
+        triggerHook: 'onEnter',
+        offset: 0,
+        duration: 500,
+        reverse: false
+      })
+      .setTween('.animation-target1', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene1)
   }
 }
 </script>

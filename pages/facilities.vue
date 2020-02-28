@@ -19,11 +19,12 @@
         ・Wi-Fi が全館でご利用いただけます。
       </p>
     </div>
-    <div class="cards">
+    <div class="cards animation-trigger1">
       <card
         v-for="facilitie in facilities"
         :arg="facilitie"
         :key="facilitie.id"
+        class="animation-target1 animation-target"
       />
     </div>
   </section>
@@ -60,6 +61,31 @@ export default {
     return {
       facilities: Data.facilities
     }
+  },
+  mounted () {
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger1',
+        triggerHook: 'onEnter',
+        offset: 0,
+        duration: 500,
+        reverse: false
+      })
+      .setTween('.animation-target1', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene1)
   }
 }
 </script>
+
+<style lang="scss">
+  .animation-target {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: all 0.4s $fadeCubic;
+  }
+</style>
