@@ -11,6 +11,7 @@
         frameborder="0"
         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
         allowfullscreen
+        title="brandmovie"
       />
     </view-video>
     <div class="sub-video">
@@ -21,6 +22,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            title="brandmovie"
           />
         </lazy-component>
       </div>
@@ -31,6 +33,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            title="brandmovie"
           />
         </lazy-component>
       </div>
@@ -41,6 +44,7 @@
             frameborder="0"
             allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
             allowfullscreen
+            title="brandmovie"
           />
         </lazy-component>
       </div>

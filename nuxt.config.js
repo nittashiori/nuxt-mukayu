@@ -15,7 +15,8 @@ export default {
   */
   head: {
     htmlAttrs: {
-      prefix: 'og: http://ogp.me/ns#'
+      prefix: 'og: http://ogp.me/ns#',
+      lang: 'ja'
     },
     titleTemplate: '%s - mukayu',
     title: process.env.npm_package_name || '',
