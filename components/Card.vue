@@ -4,9 +4,11 @@
     class="card animation-trigger1"
   >
     <figure class="figure animation-target1 animation-target">
-      <client-only>
-        <img v-lazy="`${arg.image}`" :alt="`${arg.title}イメージ`">
-      </client-only>
+      <picture>
+        <source :srcset="`${arg.webp}`" type="image/webp">
+        <img :src="`${arg.image}`" :alt="`${arg.title}イメージ`">
+      </picture>
+
       <figcaption class="figure-caption">
         {{ arg.title }}
       </figcaption>

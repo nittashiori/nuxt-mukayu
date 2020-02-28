@@ -12,6 +12,7 @@
     </nav>
     <div class="content">
       <page-kv>
+        <source slot="image" srcset="images/spa/J4-3-01.webp" type="image/webp">
         <img slot="image" data-src="images/spa/J4-3-01.jpg">
       </page-kv>
       <p class="text">
@@ -44,13 +45,22 @@
             薬草には元気を補い「補」、余分なものを捨て「捨」、流れをさらさらにし「流」、からだ全体のバランスを調える「調」、などの力があります。ひとりひとりの体調やご希望、たとえば免疫力の向上「本」、気持ちの安定「心」、長寿「寿」、美容と美肌「美」にあわせて薬草をお選びし、薬草玉や煎じ生薬・薬草茶などに使用いたします。
           </p>
           <div class="image-list animation-trigger1">
-            <img class="image-list__item animation-target1 animation-target" src="images/spa/J4-3-02.jpg">
+            <picture>
+              <source class="image-list__item animation-target1 animation-target" srcset="images/spa/J4-3-02.webp" type="image/webp">
+              <img class="image-list__item animation-target1 animation-target" src="images/spa/J4-3-02.jpg">
+            </picture>
           </div>
           <div class="image-list animation-trigger2">
-            <img class="image-list__item animation-target2 animation-target" src="images/spa/J4-3-03.jpg">
+            <picture>
+              <source class="image-list__item animation-target1 animation-target" srcset="images/spa/J4-3-03.webp" type="image/webp">
+              <img class="image-list__item animation-target2 animation-target" src="images/spa/J4-3-03.jpg">
+            </picture>
           </div>
           <div class="image-list animation-trigger3">
-            <img class="image-list__item animation-target3 animation-target" src="images/spa/J4-3-04.jpg">
+            <picture>
+              <source class="image-list__item animation-target1 animation-target" srcset="images/spa/J4-3-04.webp" type="image/webp">
+              <img class="image-list__item animation-target3 animation-target" src="images/spa/J4-3-04.jpg">
+            </picture>
           </div>
         </section>
         <section class="section">
