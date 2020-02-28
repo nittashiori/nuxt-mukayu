@@ -13,7 +13,7 @@
     <div class="content">
       <page-kv>
         <source slot="image" srcset="images/food/J6-0-01d.webp" type="image/webp">
-        <img slot="image" data-src="images/food/J6-0-01d.jpg">
+        <img slot="image" data-src="images/food/J6-0-01d.jpg" alt="蟹料理">
       </page-kv>
     </div>
     <div class="cards">
