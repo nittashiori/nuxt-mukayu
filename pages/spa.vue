@@ -13,7 +13,7 @@
     <div class="content">
       <page-kv>
         <source slot="image" srcset="images/spa/J4-3-01.webp" type="image/webp">
-        <img slot="image" data-src="images/spa/J4-3-01.jpg">
+        <img slot="image" data-src="images/spa/J4-3-01.jpg" alt="施術の様子">
       </page-kv>
       <p class="text">
         円庭施術院では外来のお客様の施術もお受け致します。トリートメントは予約制となっております。<br>
@@ -47,19 +47,19 @@
           <div class="image-list animation-trigger1">
             <picture>
               <source class="image-list__item animation-target1 animation-target" srcset="images/spa/J4-3-02.webp" type="image/webp">
-              <img class="image-list__item animation-target1 animation-target" src="images/spa/J4-3-02.jpg">
+              <img class="image-list__item animation-target1 animation-target" src="images/spa/J4-3-02.jpg" alt="">
             </picture>
           </div>
           <div class="image-list animation-trigger2">
             <picture>
               <source class="image-list__item animation-target1 animation-target" srcset="images/spa/J4-3-03.webp" type="image/webp">
-              <img class="image-list__item animation-target2 animation-target" src="images/spa/J4-3-03.jpg">
+              <img class="image-list__item animation-target2 animation-target" src="images/spa/J4-3-03.jpg" alt="">
             </picture>
           </div>
           <div class="image-list animation-trigger3">
             <picture>
               <source class="image-list__item animation-target1 animation-target" srcset="images/spa/J4-3-04.webp" type="image/webp">
-              <img class="image-list__item animation-target3 animation-target" src="images/spa/J4-3-04.jpg">
+              <img class="image-list__item animation-target3 animation-target" src="images/spa/J4-3-04.jpg" alt="">
             </picture>
           </div>
         </section>
