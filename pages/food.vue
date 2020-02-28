@@ -65,7 +65,7 @@ export default {
       .scene({
         triggerElement: '.animation-trigger1',
         triggerHook: 'onEnter',
-        offset: 100,
+        offset: 0,
         duration: 500,
         reverse: false
       })
