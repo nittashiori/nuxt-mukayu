@@ -53,9 +53,12 @@
           @click="() => show(idx)"
           class="gallery__item"
         >
-          <client-only>
-            <img v-lazy="img.src ? img.src : img">
-          </client-only>
+          <picture>
+            <client-only>
+              <source :srcset="img.webp ? img.webp : img" type="image/webp">
+              <img v-lazy="img.src ? img.src : img">
+            </client-only>
+          </picture>
         </div>
       </div>
 
@@ -93,27 +96,33 @@ export default {
       imgs: [
         {
           title: 'スパ円庭施術院',
-          src: 'images/J4-3-btn01.jpg'
+          src: 'images/J4-3-btn01.jpg',
+          webp: 'images/J4-3-btn01.webp'
         },
         {
           title: '円庭施術院',
-          src: 'images/J4-3-btn02.jpg'
+          src: 'images/J4-3-btn02.jpg',
+          webp: 'images/J4-3-btn02.webp'
         },
         {
           title: '漢方',
-          src: 'images/spa/J4-3-03.jpg'
+          src: 'images/spa/J4-3-03.jpg',
+          webp: 'images/spa/J4-3-03.webp'
         },
         {
           title: 'アメニティ',
-          src: 'images/J4-6-btn01.jpg'
+          src: 'images/J4-6-btn01.jpg',
+          webp: 'images/J4-6-btn01.webp'
         },
         {
           title: '露天風呂',
-          src: 'images/J5-0-btn01.jpg'
+          src: 'images/J5-0-btn01.jpg',
+          webp: 'images/J5-0-btn01.webp'
         },
         {
           title: '和室その2',
-          src: 'images/J5-1-btn01.jpg'
+          src: 'images/J5-1-btn01.jpg',
+          webp: 'images/J5-1-btn01.webp'
         }
       ],
       visible: false,

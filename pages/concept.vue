@@ -4,12 +4,24 @@
       {{ meta.title }}
     </pageTitle>
     <div class="image-list animation-trigger1">
-      <img class="image-list__item animation-target1 animation-target" src="images/J2-01.jpg">
-      <img class="image-list__item" src="images/J2-02_n.png">
+      <picture>
+        <source class="image-list__item animation-target1 animation-target" srcset="images/J2-01.webp" type="image/webp">
+        <img class="image-list__item animation-target1 animation-target" src="images/J2-01.jpg">
+      </picture>
+      <picture>
+        <source class="image-list__item" srcset="images/J2-02_n.webp" type="image/webp">
+        <img class="image-list__item" src="images/J2-02_n.png">
+      </picture>
     </div>
     <div class="image-list animation-trigger2">
-      <img class="image-list__item animation-target2 animation-target" src="images/J2-03.jpg">
-      <img class="image-list__item" src="images/J2-04.png">
+      <picture>
+        <source class="image-list__item animation-target2 animation-target" srcset="images/J2-03.webp" type="image/webp">
+        <img class="image-list__item animation-target2 animation-target" src="images/J2-03.jpg">
+      </picture>
+      <picture>
+        <source class="image-list__item" srcset="images/J2-04.webp" type="image/webp">
+        <img class="image-list__item" src="images/J2-04.png">
+      </picture>
     </div>
     <div class="btn-wrap">
       <nuxt-link class="btn--center" to="/">

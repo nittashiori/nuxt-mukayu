@@ -12,6 +12,7 @@
     </nav>
     <div class="content">
       <page-kv>
+        <source slot="image" srcset="images/food/J6-0-01d.webp" type="image/webp">
         <img slot="image" data-src="images/food/J6-0-01d.jpg">
       </page-kv>
     </div>
