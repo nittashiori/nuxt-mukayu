@@ -13,7 +13,7 @@
     <div class="content">
       <page-kv>
         <source slot="image" srcset="images/facilities/J7-0-01.webp" type="image/webp">
-        <img slot="image" data-src="images/facilities/J7-0-01.jpg">
+        <img slot="image" data-src="images/facilities/J7-0-01.jpg" alt="無何有の旅館入り口">
       </page-kv>
       <p class="text">
         ・Wi-Fi が全館でご利用いただけます。
