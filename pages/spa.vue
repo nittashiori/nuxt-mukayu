@@ -232,11 +232,12 @@
         </section>
       </div>
     </div>
-    <div class="cards">
+    <div class="cards animation-trigger4">
       <Card
         v-for="spa in spas"
         :arg="spa"
         :key="spa.id"
+        class="animation-target4 animation-target"
       />
     </div>
   </section>
@@ -319,6 +320,22 @@ export default {
         }
       })
     this.$scrollmagic.addScene(scene3)
+
+    const scene4 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger4',
+        triggerHook: 'onEnter',
+        offset: 100,
+        duration: 500,
+        reverse: false
+      })
+      .setTween('.animation-target4', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene4)
   }
 }
 </script>

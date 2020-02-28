@@ -28,6 +28,7 @@
         v-for="guestroom in guestrooms"
         :arg="guestroom"
         :key="guestroom.id"
+        class="animation-target1 animation-target"
       />
     </div>
   </section>
@@ -64,6 +65,23 @@ export default {
     return {
       guestrooms: Data.guestrooms
     }
+  },
+  mounted () {
+    const scene1 = this.$scrollmagic
+      .scene({
+        triggerElement: '.animation-trigger1',
+        triggerHook: 'onEnter',
+        offset: 100,
+        duration: 500,
+        reverse: false
+      })
+      .setTween('.animation-target1', {
+        css: {
+          opacity: '1',
+          transform: 'translateY(0)'
+        }
+      })
+    this.$scrollmagic.addScene(scene1)
   }
 }
 </script>
