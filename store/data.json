@@ -3,42 +3,49 @@
     {
       "id": "01",
       "image": "images/J1-0-btn01.jpg",
+      "webp": "images/J1-0-btn01.webp",
       "title": "お知らせ",
       "link": "/ca_news"
     },
     {
       "id": "02",
       "image": "images/J9-0-btn01.jpg",
+      "webp": "images/J9-0-btn01.webp",
       "title": "予約",
       "link": "/reservation"
     },
     {
       "id": "03",
       "image": "images//J7-0-btn01.jpg",
+      "webp": "images//J7-0-btn01.webp",
       "title": "施設",
       "link": "/facilities"
     },
     {
       "id": "04",
       "image": "images/J5-0-btn01.jpg",
+      "webp": "images/J5-0-btn01.webp",
       "title": "客室",
       "link": "/guestroom"
     },
     {
       "id": "05",
       "image": "images/J6-0-btn01.jpg",
+      "webp": "images/J6-0-btn01.webp",
       "title": "料理",
       "link": "/food"
     },
     {
       "id": "06",
       "image": "images/J4-3-btn01.jpg",
+      "webp": "images/J4-3-btn01.webp",
       "title": "スパ円庭施術院",
       "link": "/spa"
     },
     {
       "id": "07",
       "image": "images/J2-0-btn01.jpg",
+      "webp": "images/J2-0-btn01.webp",
       "title": "コンセプト",
       "link": "/concept"
     }
@@ -47,30 +54,35 @@
     {
       "id": "01",
       "image": "images/J7-3-btn01.jpg",
+      "webp": "images/J7-3-btn01.webp",
       "title": "エントランスロビー",
       "link": "/"
     },
     {
       "id": "02",
       "image": "images/J7-1-btn01.jpg",
+      "webp": "images/J7-1-btn01.webp",
       "title": "大浴場「こもれびの湯」",
       "link": "/"
     },
     {
       "id": "03",
       "image": "images/J7-2-btn01.jpg",
+      "webp": "images/J7-2-btn01.webp",
       "title": "図書室",
       "link": "/"
     },
     {
       "id": "04",
       "image": "images/J7-5-btn01.jpg",
+      "webp": "images/J7-5-btn01.webp",
       "title": "茶室永楽庵",
       "link": "/"
     },
     {
       "id": "05",
       "image": "images/J7-6-1-btn01.jpg",
+      "webp": "images/J7-6-1-btn01.webp",
       "title": "ショップ",
       "link": "/"
     }
@@ -79,30 +91,35 @@
     {
       "id": "01",
       "image": "images/J5-1-btn01.jpg",
+      "webp": "images/J5-1-btn01.webp",
       "title": "和室",
       "link": "/"
     },
     {
       "id": "02",
       "image": "images/J5-2-btn01.jpg",
+      "webp": "images/J5-2-btn01.webp",
       "title": "洋室",
       "link": "/"
     },
     {
       "id": "03",
       "image": "images/J5-3-btn01.jpg",
+      "webp": "images/J5-3-btn01.webp",
       "title": "和洋室",
       "link": "/"
     },
     {
       "id": "04",
       "image": "images/J5-4-btn01.jpg",
+      "webp": "images/J5-4-btn01.webp",
       "title": "特別室 若紫",
       "link": "/"
     },
     {
       "id": "05",
       "image": "images/J5-5-btn01.jpg",
+      "webp": "images/J5-5-btn01.webp",
       "title": "特別室 白緑",
       "link": "/"
     }
@@ -111,42 +128,49 @@
     {
       "id": "01",
       "image": "images/J6-3-1-btn01.jpg",
+      "webp": "images/J6-3-1-btn01.webp",
       "title": "春",
       "link": "/"
     },
     {
       "id": "02",
       "image": "images/J6-3-2-btn01.jpg",
+      "webp": "images/J6-3-2-btn01.webp",
       "title": "夏",
       "link": "/"
     },
     {
       "id": "03",
       "image": "images/J6-3-3-btn01.jpg",
+      "webp": "images/J6-3-3-btn01.webp",
       "title": "秋",
       "link": "/"
     },
     {
       "id": "04",
       "image": "images/J6-3-4-btn01.jpg",
+      "webp": "images/J6-3-4-btn01.webp",
       "title": "冬",
       "link": "/"
     },
     {
       "id": "05",
       "image": "images/J6-3-5-btn01.jpg",
+      "webp": "images/J6-3-5-btn01.webp",
       "title": "ライトディナー・寿司ディナー",
       "link": "/"
     },
     {
       "id": "06",
       "image": "images/J6-6-btn01.jpg",
+      "webp": "images/J6-6-btn01.webp",
       "title": "朝食",
       "link": "/"
     },
     {
       "id": "07",
       "image": "images/J6-8-btn01.jpg",
+      "webp": "images/J6-8-btn01.webp",
       "title": "飲み物",
       "link": "/"
     }
@@ -155,18 +179,21 @@
     {
       "id": "01",
       "image": "images/J4-3-btn02.jpg",
+      "webp": "images/J4-3-btn02.webp",
       "title": "メニュー一覧",
       "link": "/"
     },
     {
       "id": "02",
       "image": "images/J4-5-btn01.jpg",
+      "webp": "images/J4-5-btn01.webp",
       "title": "メニュー一覧（PDF）",
       "link": "/"
     },
     {
       "id": "03",
       "image": "images/J4-6-btn01.jpg",
+      "webp": "images/J4-6-btn01.webp",
       "title": "円庭施術院 ご予約について",
       "link": "/"
     }

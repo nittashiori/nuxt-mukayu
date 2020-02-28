@@ -1,5 +1,7 @@
 <template>
   <div v-lazy-container="{ selector: 'img' }" class="page-kv">
-    <slot name="image" />
+    <picture>
+      <slot name="image" />
+    </picture>
   </div>
 </template>
