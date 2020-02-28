@@ -10,7 +10,7 @@
       </h3>
       <time class="article__time">{{ date }}</time>
       <div @click="pullDownToggle()" :class="{ 'is-open': isOpen }" class="article-pullbutton">
-        <font-awesome-icon icon="angle-down" />
+        <fa-icon icon="angle-down"></fa-icon>
       </div>
     </section>
     <transition @enter="start" @after-enter="end" @before-leave="start" @after-leave="end" name="pulldown">

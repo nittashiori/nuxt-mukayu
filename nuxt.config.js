@@ -66,7 +66,8 @@ export default {
   ** Global CSS
   */
   css: [
-    'ress'// Node.js モジュールをロードする
+    'ress', // Node.js モジュールをロードする
+    '@fortawesome/fontawesome-svg-core/styles.css'
   ],
   /*
   ** Plugins to load before mounting the App
@@ -75,7 +76,8 @@ export default {
     { src: '~plugins/contentful' },
     { src: '~plugins/vue-lazyload', ssr: false },
     { src: '~plugins/vue-easy-lightbox', mode: 'client' },
-    { src: '~plugins/vue-scrollmagic', ssr: false }
+    { src: '~plugins/vue-scrollmagic', ssr: false },
+    { src: '~plugins/font-awesome', ssr: false }
   ],
   /*
   ** Nuxt.js dev-modules
@@ -93,7 +95,6 @@ export default {
   */
   modules: [
     '@nuxtjs/style-resources',
-    'nuxt-fontawesome',
     '@nuxtjs/dotenv',
     '@nuxtjs/markdownit'
   ],
@@ -102,17 +103,6 @@ export default {
       '~/assets/scss/variables.scss',
       '~/assets/scss/mixin.scss',
       '~/assets/scss/common.scss'
-    ]
-  },
-  /*
-  ** FontAwesome
-  */
-  fontawesome: {
-    imports: [
-      {
-        set: '@fortawesome/free-solid-svg-icons',
-        icons: ['fas']
-      }
     ]
   },
   /*
