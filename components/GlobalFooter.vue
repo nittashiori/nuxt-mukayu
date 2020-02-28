@@ -7,7 +7,7 @@
         </h2>
         <ul class="link-nav">
           <li class="link-nav__item">
-            <a href="/"><img class="link-nav__image" src="images/relaischateaux_s.gif">Relais &amp; Chateaux</a>
+            <a href="/"><img class="link-nav__image" src="images/relaischateaux_s.gif" alt="relais">Relais &amp; Chateaux</a>
           </li>
           <li class="link-nav__item">
             <a href="/">AMORPHE 竹山聖</a>
@@ -58,7 +58,7 @@
     </div>
     <div class="footer-inner">
       <div class="footer-shop">
-        <img class="footer-shop__logo-relais" src="images/relaischateaux_s.gif">
+        <img class="footer-shop__logo-relais" src="images/relaischateaux_s.gif" alt="relais">
         <img
           class="footer-shop__logo"
           src="images/mukayu_footer.gif"
